@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7758DED5-A5A8-491C-B5CF-4A3079F1D1CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Transportation.Domain</RootNamespace>
+    <AssemblyName>Transportation.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Abastecimento.cs" />
+    <Compile Include="Entities\AreaOperacional.cs" />
+    <Compile Include="Entities\Carregamento.cs" />
+    <Compile Include="Entities\ClasseVagao.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Composicao.cs" />
+    <Compile Include="Entities\ComposicaoLocomotiva.cs" />
+    <Compile Include="Entities\ComposicaoVagao.cs" />
+    <Compile Include="Entities\Corredor.cs" />
+    <Compile Include="Entities\Endereco.cs" />
+    <Compile Include="Entities\Estado.cs" />
+    <Compile Include="Entities\Ferrovia.cs" />
+    <Compile Include="Entities\Fluxo.cs" />
+    <Compile Include="Entities\FolhaEspecificacaoVagao.cs" />
+    <Compile Include="Entities\GrupoFluxo.cs" />
+    <Compile Include="Entities\ItemCarregamento.cs" />
+    <Compile Include="Entities\Locomotiva.cs" />
+    <Compile Include="Entities\Mercadoria.cs" />
+    <Compile Include="Entities\Movimentacao.cs" />
+    <Compile Include="Entities\NotaFiscal.cs" />
+    <Compile Include="Entities\Parada.cs" />
+    <Compile Include="Entities\Pedido.cs" />
+    <Compile Include="Entities\Rota.cs" />
+    <Compile Include="Entities\SerieCarregamento.cs" />
+    <Compile Include="Entities\SerieLocomotiva.cs" />
+    <Compile Include="Entities\SerieVagao.cs" />
+    <Compile Include="Entities\Trem.cs" />
+    <Compile Include="Entities\UnidadeMedida.cs" />
+    <Compile Include="Entities\Vagao.cs" />
+    <Compile Include="Interfaces\Repository\IComposicaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IComposicaoVagaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\ITremRepository.cs" />
+    <Compile Include="Interfaces\Services\IClasseVagaoService.cs" />
+    <Compile Include="Interfaces\Services\IComposicaoService.cs" />
+    <Compile Include="Interfaces\Services\IComposicaoVagaoService.cs" />
+    <Compile Include="Interfaces\Services\IFerroviaService.cs" />
+    <Compile Include="Interfaces\Services\ISerieVagaoService.cs" />
+    <Compile Include="Interfaces\Services\ITremService.cs" />
+    <Compile Include="Interfaces\Services\IVagaoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\Repository\IClasseVagaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IFerroviaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IRepository.cs" />
+    <Compile Include="Interfaces\Repository\ISerieVagaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IVagaoRepository.cs" />
+    <Compile Include="Services\ClasseVagaoService.cs" />
+    <Compile Include="Services\ComposicaoService.cs" />
+    <Compile Include="Services\ComposicaoVagaoService.cs" />
+    <Compile Include="Services\FerroviaService.cs" />
+    <Compile Include="Services\SerieVagaoService.cs" />
+    <Compile Include="Services\TremService.cs" />
+    <Compile Include="Services\VagaoService.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

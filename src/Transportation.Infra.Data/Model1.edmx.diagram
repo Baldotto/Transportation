@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="27de13a5d527497c9683ec8aa7f432c1" Name="Diagram1" ZoomLevel="41" ShowGrid="true">
+        <EntityTypeShape EntityType="Model.Abastecimentos" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AreasOperacionais" Width="1.5" PointX="19.625" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Carregamentos" Width="1.5" PointX="14" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClassesVagoes" Width="1.5" PointX="15.125" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Clientes" Width="1.5" PointX="13.125" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Composicoes" Width="1.5" PointX="6.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ComposicoesLocomotivas" Width="1.5" PointX="10.375" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ComposicoesVagoes" Width="1.5" PointX="16.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Corredores" Width="1.5" PointX="3.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Enderecos" Width="1.5" PointX="10.375" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Estados" Width="1.5" PointX="1.375" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Ferrovias" Width="1.5" PointX="2.875" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Fluxos" Width="1.5" PointX="8.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.GruposFluxos" Width="1.5" PointX="10.625" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ItensCarregamentos" Width="1.5" PointX="10.875" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Locomotivas" Width="1.5" PointX="8.375" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Mercadorias" Width="1.5" PointX="14.875" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Movimentacoes" Width="1.5" PointX="5.875" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotasFiscais" Width="1.5" PointX="15.125" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Paradas" Width="1.5" PointX="5.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Pedidos" Width="1.5" PointX="14.875" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Rotas" Width="1.5" PointX="18.625" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SeriesCarregamentos" Width="1.5" PointX="3" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SeriesLocomotivas" Width="1.5" PointX="16.875" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SeriesVagoes" Width="1.5" PointX="13" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Trens" Width="1.5" PointX="12.5" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UnidadesMedidas" Width="1.5" PointX="17.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Vagoes" Width="1.5" PointX="8.375" PointY="21.5" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_Abastecimentos_dbo_AreasOperacionais_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Abastecimentos_dbo_Locomotivas_LocomotivaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AreasOperacionais_dbo_Ferrovias_FerroviaOperadora_FerroviaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Fluxos_dbo_AreasOperacionais_Destino_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Fluxos_dbo_AreasOperacionais_Origem_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Movimentacoes_dbo_AreasOperacionais_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Paradas_dbo_AreasOperacionais_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalFim_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalInicio_AreaOperacionalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Carregamentos_dbo_Mercadorias_MercadoriaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Carregamentos_dbo_NotasFiscais_NotaFiscalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_ItensCarregamentos_dbo_Carregamentos_CarregamentoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Enderecos_dbo_Clientes_ClienteId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Fluxos_dbo_Clientes_ClienteCorrentista_ClienteId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Composicoes_dbo_Trens_TremId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_ComposicoesLocomotivas_dbo_Composicoes_ComposicaoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_ComposicoesVagoes_dbo_Composicoes_ComposicaoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_ComposicoesLocomotivas_dbo_Locomotivas_LocomotivaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_ComposicoesVagoes_dbo_Vagoes_Vagao_VagaoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Corredores_dbo_Ferrovias_FerroviaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Enderecos_dbo_Estados_EstadoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_SeriesCarregamentos_dbo_Estados_EstadoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_GruposFluxos_dbo_Ferrovias_FerroviaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Locomotivas_dbo_Ferrovias_FerroviaProprietaria_FerroviaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_SeriesCarregamentos_dbo_Ferrovias_FerroviaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Fluxos_dbo_Mercadorias_MercadoriaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Fluxos_dbo_UnidadesMedidas_UnidadeMedidaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Pedidos_dbo_GruposFluxos_GrupoFluxoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_ItensCarregamentos_dbo_Vagoes_VagaoId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Locomotivas_dbo_SeriesLocomotivas_SerieLocomotivaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

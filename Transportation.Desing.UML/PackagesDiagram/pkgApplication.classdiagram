@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="1bc1cb37-806c-4f8b-9014-fc7a2a797fc3" name="pkgApplication" linkedPackageId="d98fe8b2-1447-4bda-b550-61636b16b0b0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="b2706538-ee53-4fec-b6d7-590dee519e9c" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="9f34a411-3714-45ea-bb31-df2ffd8368f0" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b704dc4d-efac-40c0-8ef5-5882621c1131">
+          <propertyInstance Id="a5f2ef4c-0e9d-43a4-b6a9-c23eadca6140" name="BaseName">
+            <elementDefinition Id="38cf8b09-e1d3-427e-af9c-8c4635ba4d2c" />
+          </propertyInstance>
+          <elementDefinition Id="47cd6cd9-bf49-4849-915c-d0593812e316" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="25ab7f07-36cb-47a0-9957-c836a50879ec">
+          <propertyInstance Id="c8d9aa4c-4bd7-41ea-a261-5850be1ad17f" name="ClrAttributes">
+            <elementDefinition Id="506c8b9b-b3d2-4b11-b3b7-22c69fd09ae7" />
+          </propertyInstance>
+          <elementDefinition Id="59e0599c-b683-4b2c-bc80-b567e4cfbbb3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="142ea070-3ee6-4619-8860-4365b97d28cd">
+          <propertyInstance Id="538c1dca-7a23-4bdf-a8d6-00f238798f99" name="Usings">
+            <elementDefinition Id="78cbb0f2-2550-4958-a1df-9f7f0013d9f0" />
+          </propertyInstance>
+          <elementDefinition Id="3e72261b-9376-4ea4-a80b-69b1676f3796" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="8eac951a-3ade-4f2e-bdc7-0c018f2ff8ba" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="7f642fa9-3e2c-48cd-9743-565005e17df8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a02515d0-e9db-4558-b61c-5aaed698dca8">
+          <propertyInstance Id="123f6ec8-a1b5-4a06-9b2c-6ce0526cc84f" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="ddd2468f-c805-4a6e-8f5c-b7f30a4acd67" />
+          </propertyInstance>
+          <elementDefinition Id="e9b94bd3-92a7-4b62-a36c-5dd9a45ac100" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dbc21f1f-2bfe-4f21-b36c-a7cc31776552">
+          <propertyInstance Id="d9592211-12a2-4117-8320-ff098bbf5fd1" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="d2b65a2b-a5eb-457b-a2bf-fe64d8f722ff" />
+          </propertyInstance>
+          <elementDefinition Id="2849c8f2-739b-4835-9177-2384467ff7b0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="09aa2f0a-7c99-4a80-98bc-184f6fa164fe">
+          <propertyInstance Id="28431ff5-3c34-49ba-8d5b-02269a5381ec" name="ProjectPath" value="ClassTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|EnumTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|InterfaceTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|StructTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj">
+            <elementDefinition Id="bdb5e1f2-fa4a-4e98-a6a9-4708a191e134" />
+          </propertyInstance>
+          <elementDefinition Id="a959827a-306c-463f-9ea0-44a53125a825" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d4eb15f1-0601-415c-9c3c-ea6a822b9488">
+          <propertyInstance Id="76e17488-b7de-40c1-a4fd-993513deefec" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="60e165b1-8813-4a83-b44b-5e50166ebe85" />
+          </propertyInstance>
+          <elementDefinition Id="03685633-1b40-4c48-ad3a-e096f025525a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c361660c-2c95-4e8a-8471-f80bd13bc49c">
+          <propertyInstance Id="60df4ea9-6b1b-4a7a-8556-a5d3c063d612" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="1e3b1eb4-4c9a-4268-a798-5f72b387c181" />
+          </propertyInstance>
+          <elementDefinition Id="8f5617f1-d920-410e-8cc2-2bcde98fcd3a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="63db24af-bfad-43c9-9712-4f0c2ff70da0">
+          <propertyInstance Id="77d075cd-a71a-471d-ac54-517e9e9ac425" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="a229187a-a2da-42f8-b698-7ecb21d586d2" />
+          </propertyInstance>
+          <elementDefinition Id="80b1397f-9aa1-4b18-8c67-36b5783ee412" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4cd64e47-b29c-458a-96d8-7d030943b934">
+          <propertyInstance Id="20048f64-e708-4307-aa6a-3a50a80f7534" name="Parameters">
+            <elementDefinition Id="497c6bc4-3261-4fad-b763-26279b88a82d" />
+          </propertyInstance>
+          <elementDefinition Id="4942c093-8335-421e-ab7b-61624dd8cabf" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="9fa2492c-b3e1-4a38-8a90-178b705a7500">
+      <profileInstance Id="8a3e5ac2-73c8-4270-b515-56e109237287" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="67c4ddf0-ed27-4012-8140-5b0bfa2301a0">
+      <profileInstance Id="c90d7b6a-22fd-4eb6-a2cb-5d5c259df4bd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="58896fe2-efa7-4fbc-83e6-89ad4a8533dd">
+      <profileInstance Id="c1b74454-e347-4b96-a3b4-2de0a410031a" name="CSharpProfile">
+        <elementDefinition Id="ed196025-0ffa-4f0c-9714-88ce018663b6" />
+      </profileInstance>
+      <elementDefinition Id="8625bf6e-cda2-41ed-a755-38de9fd3ffbe" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="65bc6964-71a1-459e-9be1-b2976fbf1193">
+      <profileInstance Id="a21dfc90-71a8-4d1c-9438-d1633f1c98eb" name="TextTemplateBindings">
+        <elementDefinition Id="82ba241a-cd2e-4669-96ff-ccae5b02142e" />
+      </profileInstance>
+      <elementDefinition Id="a5f59692-efeb-488f-b302-5d1334c042e7" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="851272c0-b8a8-4a62-ad9c-a411dff5fde5" name="Application">
+        <elementDefinition Id="37107812-06cd-492e-9863-89bcf776c5c1" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="7522776b-fbd3-486f-bbf9-ad7118adf195" name="CarregamentoAppService" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bb6614d1-8236-4cae-b00b-ea6bd91d9b9b" />
+              <suppliersInternal>
+                <dependency Id="64e21a86-1250-4da0-a20e-b7e1b3ac5285">
+                  <interfaceMoniker Id="28e448e5-a701-4ad7-b130-ab006de22174" LastKnownName="ICarregamentoAppService" />
+                  <elementDefinition Id="cfd35523-61c5-400f-a0ac-7b9321d2c20e" />
+                </dependency>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="79c72140-ab1b-47b9-ba2b-d20467af45df" name="Carregar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e5cfb758-0ed8-49d2-a67e-56986f20338c" />
+                </operation>
+                <operation Id="bbf53d08-82f1-49f3-9b35-fd67d55760e8" name="Descarregar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="820a42cc-afe7-421a-a427-ff507a21e865" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="60a7773c-eb31-42f5-9da4-8072641febae" name="VagaoAppService" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="04acb210-4c50-4860-9e90-28e514d5fd0b" />
+              <suppliersInternal>
+                <dependency Id="ba67bac3-71b4-42ef-a79b-79e90a936287">
+                  <interfaceMoniker Id="ab7af060-8a20-40b9-bd51-38e186fc0720" LastKnownName="IVagaoAppService" />
+                  <elementDefinition Id="8d016376-0727-41f5-8b46-5a1727869f8e" />
+                </dependency>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="a733f75f-05dd-4b23-a0b4-5104f3b6090a" isDerived="false" sourceEndRoleName="VagaoAppService" targetEndRoleName="CarregamentoAppService" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="7522776b-fbd3-486f-bbf9-ad7118adf195" LastKnownName="CarregamentoAppService" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2c35977e-e5d7-43a4-b7f7-154c0fa121e1" name="VagaoAppService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="32a0910d-fa6f-4124-89f5-3db3abef10d0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="724e3083-78b9-4794-9928-83edd2cb3d34" name="CarregamentoAppService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="78bd7cc3-239e-4f87-b43c-4dee4a33dc32" name="Lower" value="*">
+                            <elementDefinition Id="15bb4506-f444-42f5-bb34-ebaef05d469e" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="2f4a5012-36a5-40fb-a562-c4022be8ff74" name="Upper" value="*">
+                            <elementDefinition Id="706e8c3e-3d48-497a-b44a-45dadb4b14d1" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="35791ea2-bdc3-4d5f-9d37-a1315973cbfd" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="a18369f0-7783-43e9-b32c-727f5492af45" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="c5a701ef-144e-4a61-99e2-baba4b946067" name="BuscarTodos" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a8939ad8-853c-415e-a364-693316b6f0a0" />
+                </operation>
+                <operation Id="de2c2181-e3a5-4836-80fb-1a5cc1d11bd9" name="BuscarPorId" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a65c18fe-bd31-4632-a126-b39894cce26a" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="28e448e5-a701-4ad7-b130-ab006de22174" name="ICarregamentoAppService" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="38c4de50-1a20-4c5c-94d4-35c676975a59" />
+              <ownedOperations>
+                <operation Id="608d10db-958c-4863-8783-96145009d225" name="Carregar" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d55c272c-e0a7-4a75-bd49-cb7242640cd1" />
+                </operation>
+                <operation Id="c9d19cee-8d23-4d96-8fdb-219cf0239e96" name="Descarregar" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9b42b7de-4485-4fe2-93fd-8e722a0bb3c6" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="ab7af060-8a20-40b9-bd51-38e186fc0720" name="IVagaoAppService" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="b1465991-63de-4d18-803a-2d506703d62a" />
+              <ownedOperations>
+                <operation Id="cee2a36f-e8a8-463f-8b23-8c9081a4c7f2" name="BuscarPorId" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="712b9edb-68cb-4590-a519-acdd6a9647e5" />
+                </operation>
+                <operation Id="a860fd90-2c77-45dd-b4c9-abf2222bf4bf" name="BuscarTodos" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ebf4a9a9-4af4-4a38-8133-6e3fe9af29c9" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="d98fe8b2-1447-4bda-b550-61636b16b0b0" name="Transportation.Desing.UML">
+    <elementDefinition Id="bbcb7f00-5509-4e6e-99df-97fd2eed0377" />
+  </package>
+</logicalClassDesignerModel>

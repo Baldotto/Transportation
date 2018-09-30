@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Abastecimentos">
+    <Key>
+      <PropertyRef Name="AbastecimentoId" />
+    </Key>
+    <Property Name="AbastecimentoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="QuantidadeAbastecida" Type="float" Nullable="false" />
+    <Property Name="LocomotivaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AreaOperacionalId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AreasOperacionais">
+    <Key>
+      <PropertyRef Name="AreaOperacionalId" />
+    </Key>
+    <Property Name="AreaOperacionalId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" />
+    <Property Name="FerroviaOperadoraId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FerroviaOperadora_FerroviaId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Carregamentos">
+    <Key>
+      <PropertyRef Name="CarregamentoId" />
+    </Key>
+    <Property Name="CarregamentoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MercadoriaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="QuantidadeCarregada" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="NotaFiscalId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClassesVagoes">
+    <Key>
+      <PropertyRef Name="ClasseVagaoId" />
+    </Key>
+    <Property Name="ClasseVagaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ClienteId" />
+    </Key>
+    <Property Name="ClienteId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" />
+    <Property Name="CNPJ" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Composicoes">
+    <Key>
+      <PropertyRef Name="ComposicaoId" />
+    </Key>
+    <Property Name="ComposicaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IndicadorAtivo" Type="bit" Nullable="false" />
+    <Property Name="TremId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComposicoesLocomotivas">
+    <Key>
+      <PropertyRef Name="ComposicaoLocomotivaId" />
+    </Key>
+    <Property Name="ComposicaoLocomotivaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ComposicaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LocomotivaId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComposicoesVagoes">
+    <Key>
+      <PropertyRef Name="ComposicaoVagaoId" />
+    </Key>
+    <Property Name="ComposicaoVagaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ComposicaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="VagaoIdId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Vagao_VagaoId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Corredores">
+    <Key>
+      <PropertyRef Name="CorredorId" />
+    </Key>
+    <Property Name="CorredorId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" />
+    <Property Name="FerroviaId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Enderecos">
+    <Key>
+      <PropertyRef Name="EnderecoId" />
+    </Key>
+    <Property Name="EnderecoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Logradouro" Type="varchar" MaxLength="100" />
+    <Property Name="Numero" Type="varchar" MaxLength="100" />
+    <Property Name="Complemento" Type="varchar" MaxLength="100" />
+    <Property Name="Bairro" Type="varchar" MaxLength="100" />
+    <Property Name="CEP" Type="varchar" MaxLength="100" />
+    <Property Name="Cidade" Type="varchar" MaxLength="100" />
+    <Property Name="EstadoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClienteId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="EstadoId" />
+    </Key>
+    <Property Name="EstadoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Sigla" Type="varchar" MaxLength="100" />
+    <Property Name="Nome" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Ferrovias">
+    <Key>
+      <PropertyRef Name="FerroviaId" />
+    </Key>
+    <Property Name="FerroviaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fluxos">
+    <Key>
+      <PropertyRef Name="FluxoId" />
+    </Key>
+    <Property Name="FluxoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="OrigemId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DestinoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClienteCorrentistaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MercadoriaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UnidadeMedidaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClienteCorrentista_ClienteId" Type="uniqueidentifier" />
+    <Property Name="Destino_AreaOperacionalId" Type="uniqueidentifier" />
+    <Property Name="Origem_AreaOperacionalId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="GruposFluxos">
+    <Key>
+      <PropertyRef Name="GrupoFluxoId" />
+    </Key>
+    <Property Name="GrupoFluxoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="FerroviaId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItensCarregamentos">
+    <Key>
+      <PropertyRef Name="ItemCarregamentoId" />
+    </Key>
+    <Property Name="ItemCarregamentoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="VagaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CarregamentoId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locomotivas">
+    <Key>
+      <PropertyRef Name="LocomotivaId" />
+    </Key>
+    <Property Name="LocomotivaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="FerroviaProprietariaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SerieLocomotivaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FerroviaProprietaria_FerroviaId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Mercadorias">
+    <Key>
+      <PropertyRef Name="MercadoriaId" />
+    </Key>
+    <Property Name="MercadoriaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Movimentacoes">
+    <Key>
+      <PropertyRef Name="MovimentacaoId" />
+    </Key>
+    <Property Name="MovimentacaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DataChegada" Type="datetime" Nullable="false" />
+    <Property Name="DataSaida" Type="datetime" Nullable="false" />
+    <Property Name="AreaOperacionalId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NotasFiscais">
+    <Key>
+      <PropertyRef Name="NotaFiscalId" />
+    </Key>
+    <Property Name="NotaFiscalId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Serie" Type="varchar" MaxLength="100" />
+    <Property Name="Numero" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Paradas">
+    <Key>
+      <PropertyRef Name="ParadaId" />
+    </Key>
+    <Property Name="ParadaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Datainicio" Type="datetime" Nullable="false" />
+    <Property Name="DataFim" Type="datetime" Nullable="false" />
+    <Property Name="AreaOperacionalId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="PedidoId" />
+    </Key>
+    <Property Name="PedidoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="GrupoFluxoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DataPedido" Type="datetime" Nullable="false" />
+    <Property Name="QuantidadeVagoes" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rotas">
+    <Key>
+      <PropertyRef Name="RotaId" />
+    </Key>
+    <Property Name="RotaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="AreaOperacionalInicioId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AreaOperacionalFimId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Extencao" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="AreaOperacionalFim_AreaOperacionalId" Type="uniqueidentifier" />
+    <Property Name="AreaOperacionalInicio_AreaOperacionalId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="SeriesCarregamentos">
+    <Key>
+      <PropertyRef Name="SerieCarregamentoId" />
+    </Key>
+    <Property Name="SerieCarregamentoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="FerroviaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EstadoId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SeriesLocomotivas">
+    <Key>
+      <PropertyRef Name="SerieLocomotivaId" />
+    </Key>
+    <Property Name="SerieLocomotivaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="100" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SeriesVagoes">
+    <Key>
+      <PropertyRef Name="SerieVagaoId" />
+    </Key>
+    <Property Name="SerieVagaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Descricao" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ClasseVagaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trens">
+    <Key>
+      <PropertyRef Name="TremId" />
+    </Key>
+    <Property Name="TremId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Prefixo" Type="varchar" MaxLength="100" />
+    <Property Name="OS" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UnidadesMedidas">
+    <Key>
+      <PropertyRef Name="UnidadeMedidaId" />
+    </Key>
+    <Property Name="UnidadeMedidaId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codico" Type="varchar" MaxLength="100" />
+    <Property Name="Descricao" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Vagoes">
+    <Key>
+      <PropertyRef Name="VagaoId" />
+    </Key>
+    <Property Name="VagaoId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DataCadastro" Type="datetime" Nullable="false" />
+    <Property Name="Ativo" Type="bit" Nullable="false" />
+    <Property Name="Codigo" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="Bitola" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="QuantidadeEixos" Type="int" Nullable="false" />
+    <Property Name="CapacidadeNominal" Type="float" Nullable="false" />
+    <Property Name="Comprimento" Type="float" Nullable="false" />
+    <Property Name="Largura" Type="float" Nullable="false" />
+    <Property Name="Altura" Type="float" Nullable="false" />
+    <Property Name="ComprimentoUtil" Type="float" Nullable="false" />
+    <Property Name="LarguraUtil" Type="float" Nullable="false" />
+    <Property Name="VolumeMedio" Type="float" Nullable="false" />
+    <Property Name="DataFabricacao" Type="datetime" Nullable="false" />
+    <Property Name="Tara" Type="float" Nullable="false" />
+    <Property Name="FerroviaOPeradoraId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SerieVagaoId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_Abastecimentos_dbo_AreasOperacionais_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="1" />
+    <End Role="Abastecimentos" Type="Self.Abastecimentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Abastecimentos">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Abastecimentos_dbo_Locomotivas_LocomotivaId">
+    <End Role="Locomotivas" Type="Self.Locomotivas" Multiplicity="1" />
+    <End Role="Abastecimentos" Type="Self.Abastecimentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locomotivas">
+        <PropertyRef Name="LocomotivaId" />
+      </Principal>
+      <Dependent Role="Abastecimentos">
+        <PropertyRef Name="LocomotivaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AreasOperacionais_dbo_Ferrovias_FerroviaOperadora_FerroviaId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="0..1" />
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="AreasOperacionais">
+        <PropertyRef Name="FerroviaOperadora_FerroviaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Carregamentos_dbo_Mercadorias_MercadoriaId">
+    <End Role="Mercadorias" Type="Self.Mercadorias" Multiplicity="1" />
+    <End Role="Carregamentos" Type="Self.Carregamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mercadorias">
+        <PropertyRef Name="MercadoriaId" />
+      </Principal>
+      <Dependent Role="Carregamentos">
+        <PropertyRef Name="MercadoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Carregamentos_dbo_NotasFiscais_NotaFiscalId">
+    <End Role="NotasFiscais" Type="Self.NotasFiscais" Multiplicity="1" />
+    <End Role="Carregamentos" Type="Self.Carregamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NotasFiscais">
+        <PropertyRef Name="NotaFiscalId" />
+      </Principal>
+      <Dependent Role="Carregamentos">
+        <PropertyRef Name="NotaFiscalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Composicoes_dbo_Trens_TremId">
+    <End Role="Trens" Type="Self.Trens" Multiplicity="1" />
+    <End Role="Composicoes" Type="Self.Composicoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trens">
+        <PropertyRef Name="TremId" />
+      </Principal>
+      <Dependent Role="Composicoes">
+        <PropertyRef Name="TremId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ComposicoesLocomotivas_dbo_Composicoes_ComposicaoId">
+    <End Role="Composicoes" Type="Self.Composicoes" Multiplicity="1" />
+    <End Role="ComposicoesLocomotivas" Type="Self.ComposicoesLocomotivas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Composicoes">
+        <PropertyRef Name="ComposicaoId" />
+      </Principal>
+      <Dependent Role="ComposicoesLocomotivas">
+        <PropertyRef Name="ComposicaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ComposicoesLocomotivas_dbo_Locomotivas_LocomotivaId">
+    <End Role="Locomotivas" Type="Self.Locomotivas" Multiplicity="1" />
+    <End Role="ComposicoesLocomotivas" Type="Self.ComposicoesLocomotivas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locomotivas">
+        <PropertyRef Name="LocomotivaId" />
+      </Principal>
+      <Dependent Role="ComposicoesLocomotivas">
+        <PropertyRef Name="LocomotivaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ComposicoesVagoes_dbo_Composicoes_ComposicaoId">
+    <End Role="Composicoes" Type="Self.Composicoes" Multiplicity="1" />
+    <End Role="ComposicoesVagoes" Type="Self.ComposicoesVagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Composicoes">
+        <PropertyRef Name="ComposicaoId" />
+      </Principal>
+      <Dependent Role="ComposicoesVagoes">
+        <PropertyRef Name="ComposicaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ComposicoesVagoes_dbo_Vagoes_Vagao_VagaoId">
+    <End Role="Vagoes" Type="Self.Vagoes" Multiplicity="0..1" />
+    <End Role="ComposicoesVagoes" Type="Self.ComposicoesVagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vagoes">
+        <PropertyRef Name="VagaoId" />
+      </Principal>
+      <Dependent Role="ComposicoesVagoes">
+        <PropertyRef Name="Vagao_VagaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Corredores_dbo_Ferrovias_FerroviaId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="1" />
+    <End Role="Corredores" Type="Self.Corredores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="Corredores">
+        <PropertyRef Name="FerroviaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Enderecos_dbo_Clientes_ClienteId">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+    <End Role="Enderecos" Type="Self.Enderecos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Enderecos">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Enderecos_dbo_Estados_EstadoId">
+    <End Role="Estados" Type="Self.Estados" Multiplicity="1" />
+    <End Role="Enderecos" Type="Self.Enderecos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="EstadoId" />
+      </Principal>
+      <Dependent Role="Enderecos">
+        <PropertyRef Name="EstadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Fluxos_dbo_AreasOperacionais_Destino_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="0..1" />
+    <End Role="Fluxos" Type="Self.Fluxos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Fluxos">
+        <PropertyRef Name="Destino_AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Fluxos_dbo_AreasOperacionais_Origem_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="0..1" />
+    <End Role="Fluxos" Type="Self.Fluxos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Fluxos">
+        <PropertyRef Name="Origem_AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Fluxos_dbo_Clientes_ClienteCorrentista_ClienteId">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Fluxos" Type="Self.Fluxos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Fluxos">
+        <PropertyRef Name="ClienteCorrentista_ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Fluxos_dbo_Mercadorias_MercadoriaId">
+    <End Role="Mercadorias" Type="Self.Mercadorias" Multiplicity="1" />
+    <End Role="Fluxos" Type="Self.Fluxos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mercadorias">
+        <PropertyRef Name="MercadoriaId" />
+      </Principal>
+      <Dependent Role="Fluxos">
+        <PropertyRef Name="MercadoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Fluxos_dbo_UnidadesMedidas_UnidadeMedidaId">
+    <End Role="UnidadesMedidas" Type="Self.UnidadesMedidas" Multiplicity="1" />
+    <End Role="Fluxos" Type="Self.Fluxos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnidadesMedidas">
+        <PropertyRef Name="UnidadeMedidaId" />
+      </Principal>
+      <Dependent Role="Fluxos">
+        <PropertyRef Name="UnidadeMedidaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_GruposFluxos_dbo_Ferrovias_FerroviaId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="1" />
+    <End Role="GruposFluxos" Type="Self.GruposFluxos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="GruposFluxos">
+        <PropertyRef Name="FerroviaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ItensCarregamentos_dbo_Carregamentos_CarregamentoId">
+    <End Role="Carregamentos" Type="Self.Carregamentos" Multiplicity="1" />
+    <End Role="ItensCarregamentos" Type="Self.ItensCarregamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carregamentos">
+        <PropertyRef Name="CarregamentoId" />
+      </Principal>
+      <Dependent Role="ItensCarregamentos">
+        <PropertyRef Name="CarregamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ItensCarregamentos_dbo_Vagoes_VagaoId">
+    <End Role="Vagoes" Type="Self.Vagoes" Multiplicity="1" />
+    <End Role="ItensCarregamentos" Type="Self.ItensCarregamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vagoes">
+        <PropertyRef Name="VagaoId" />
+      </Principal>
+      <Dependent Role="ItensCarregamentos">
+        <PropertyRef Name="VagaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Locomotivas_dbo_Ferrovias_FerroviaProprietaria_FerroviaId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="0..1" />
+    <End Role="Locomotivas" Type="Self.Locomotivas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="Locomotivas">
+        <PropertyRef Name="FerroviaProprietaria_FerroviaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Locomotivas_dbo_SeriesLocomotivas_SerieLocomotivaId">
+    <End Role="SeriesLocomotivas" Type="Self.SeriesLocomotivas" Multiplicity="1" />
+    <End Role="Locomotivas" Type="Self.Locomotivas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SeriesLocomotivas">
+        <PropertyRef Name="SerieLocomotivaId" />
+      </Principal>
+      <Dependent Role="Locomotivas">
+        <PropertyRef Name="SerieLocomotivaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Movimentacoes_dbo_AreasOperacionais_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="1" />
+    <End Role="Movimentacoes" Type="Self.Movimentacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Movimentacoes">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Paradas_dbo_AreasOperacionais_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="1" />
+    <End Role="Paradas" Type="Self.Paradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Paradas">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Pedidos_dbo_GruposFluxos_GrupoFluxoId">
+    <End Role="GruposFluxos" Type="Self.GruposFluxos" Multiplicity="1" />
+    <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GruposFluxos">
+        <PropertyRef Name="GrupoFluxoId" />
+      </Principal>
+      <Dependent Role="Pedidos">
+        <PropertyRef Name="GrupoFluxoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalFim_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="0..1" />
+    <End Role="Rotas" Type="Self.Rotas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Rotas">
+        <PropertyRef Name="AreaOperacionalFim_AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalInicio_AreaOperacionalId">
+    <End Role="AreasOperacionais" Type="Self.AreasOperacionais" Multiplicity="0..1" />
+    <End Role="Rotas" Type="Self.Rotas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreasOperacionais">
+        <PropertyRef Name="AreaOperacionalId" />
+      </Principal>
+      <Dependent Role="Rotas">
+        <PropertyRef Name="AreaOperacionalInicio_AreaOperacionalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SeriesCarregamentos_dbo_Estados_EstadoId">
+    <End Role="Estados" Type="Self.Estados" Multiplicity="1" />
+    <End Role="SeriesCarregamentos" Type="Self.SeriesCarregamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="EstadoId" />
+      </Principal>
+      <Dependent Role="SeriesCarregamentos">
+        <PropertyRef Name="EstadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SeriesCarregamentos_dbo_Ferrovias_FerroviaId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="1" />
+    <End Role="SeriesCarregamentos" Type="Self.SeriesCarregamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="SeriesCarregamentos">
+        <PropertyRef Name="FerroviaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId">
+    <End Role="ClassesVagoes" Type="Self.ClassesVagoes" Multiplicity="1" />
+    <End Role="SeriesVagoes" Type="Self.SeriesVagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClassesVagoes">
+        <PropertyRef Name="ClasseVagaoId" />
+      </Principal>
+      <Dependent Role="SeriesVagoes">
+        <PropertyRef Name="ClasseVagaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="1" />
+    <End Role="Vagoes" Type="Self.Vagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="Vagoes">
+        <PropertyRef Name="FerroviaOPeradoraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId">
+    <End Role="SeriesVagoes" Type="Self.SeriesVagoes" Multiplicity="1" />
+    <End Role="Vagoes" Type="Self.Vagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SeriesVagoes">
+        <PropertyRef Name="SerieVagaoId" />
+      </Principal>
+      <Dependent Role="Vagoes">
+        <PropertyRef Name="SerieVagaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Abastecimentos" EntityType="Self.Abastecimentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AreasOperacionais" EntityType="Self.AreasOperacionais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carregamentos" EntityType="Self.Carregamentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClassesVagoes" EntityType="Self.ClassesVagoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Composicoes" EntityType="Self.Composicoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ComposicoesLocomotivas" EntityType="Self.ComposicoesLocomotivas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ComposicoesVagoes" EntityType="Self.ComposicoesVagoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Corredores" EntityType="Self.Corredores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Enderecos" EntityType="Self.Enderecos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estados" EntityType="Self.Estados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ferrovias" EntityType="Self.Ferrovias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fluxos" EntityType="Self.Fluxos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GruposFluxos" EntityType="Self.GruposFluxos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItensCarregamentos" EntityType="Self.ItensCarregamentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Locomotivas" EntityType="Self.Locomotivas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mercadorias" EntityType="Self.Mercadorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movimentacoes" EntityType="Self.Movimentacoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NotasFiscais" EntityType="Self.NotasFiscais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paradas" EntityType="Self.Paradas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pedidos" EntityType="Self.Pedidos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rotas" EntityType="Self.Rotas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SeriesCarregamentos" EntityType="Self.SeriesCarregamentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SeriesLocomotivas" EntityType="Self.SeriesLocomotivas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SeriesVagoes" EntityType="Self.SeriesVagoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trens" EntityType="Self.Trens" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnidadesMedidas" EntityType="Self.UnidadesMedidas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vagoes" EntityType="Self.Vagoes" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_Abastecimentos_dbo_AreasOperacionais_AreaOperacionalId" Association="Self.FK_dbo_Abastecimentos_dbo_AreasOperacionais_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Abastecimentos" EntitySet="Abastecimentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Abastecimentos_dbo_Locomotivas_LocomotivaId" Association="Self.FK_dbo_Abastecimentos_dbo_Locomotivas_LocomotivaId">
+      <End Role="Locomotivas" EntitySet="Locomotivas" />
+      <End Role="Abastecimentos" EntitySet="Abastecimentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AreasOperacionais_dbo_Ferrovias_FerroviaOperadora_FerroviaId" Association="Self.FK_dbo_AreasOperacionais_dbo_Ferrovias_FerroviaOperadora_FerroviaId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Carregamentos_dbo_Mercadorias_MercadoriaId" Association="Self.FK_dbo_Carregamentos_dbo_Mercadorias_MercadoriaId">
+      <End Role="Mercadorias" EntitySet="Mercadorias" />
+      <End Role="Carregamentos" EntitySet="Carregamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Carregamentos_dbo_NotasFiscais_NotaFiscalId" Association="Self.FK_dbo_Carregamentos_dbo_NotasFiscais_NotaFiscalId">
+      <End Role="NotasFiscais" EntitySet="NotasFiscais" />
+      <End Role="Carregamentos" EntitySet="Carregamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Composicoes_dbo_Trens_TremId" Association="Self.FK_dbo_Composicoes_dbo_Trens_TremId">
+      <End Role="Trens" EntitySet="Trens" />
+      <End Role="Composicoes" EntitySet="Composicoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ComposicoesLocomotivas_dbo_Composicoes_ComposicaoId" Association="Self.FK_dbo_ComposicoesLocomotivas_dbo_Composicoes_ComposicaoId">
+      <End Role="Composicoes" EntitySet="Composicoes" />
+      <End Role="ComposicoesLocomotivas" EntitySet="ComposicoesLocomotivas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ComposicoesLocomotivas_dbo_Locomotivas_LocomotivaId" Association="Self.FK_dbo_ComposicoesLocomotivas_dbo_Locomotivas_LocomotivaId">
+      <End Role="Locomotivas" EntitySet="Locomotivas" />
+      <End Role="ComposicoesLocomotivas" EntitySet="ComposicoesLocomotivas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ComposicoesVagoes_dbo_Composicoes_ComposicaoId" Association="Self.FK_dbo_ComposicoesVagoes_dbo_Composicoes_ComposicaoId">
+      <End Role="Composicoes" EntitySet="Composicoes" />
+      <End Role="ComposicoesVagoes" EntitySet="ComposicoesVagoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ComposicoesVagoes_dbo_Vagoes_Vagao_VagaoId" Association="Self.FK_dbo_ComposicoesVagoes_dbo_Vagoes_Vagao_VagaoId">
+      <End Role="Vagoes" EntitySet="Vagoes" />
+      <End Role="ComposicoesVagoes" EntitySet="ComposicoesVagoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Corredores_dbo_Ferrovias_FerroviaId" Association="Self.FK_dbo_Corredores_dbo_Ferrovias_FerroviaId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="Corredores" EntitySet="Corredores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Enderecos_dbo_Clientes_ClienteId" Association="Self.FK_dbo_Enderecos_dbo_Clientes_ClienteId">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Enderecos" EntitySet="Enderecos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Enderecos_dbo_Estados_EstadoId" Association="Self.FK_dbo_Enderecos_dbo_Estados_EstadoId">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="Enderecos" EntitySet="Enderecos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Fluxos_dbo_AreasOperacionais_Destino_AreaOperacionalId" Association="Self.FK_dbo_Fluxos_dbo_AreasOperacionais_Destino_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Fluxos" EntitySet="Fluxos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Fluxos_dbo_AreasOperacionais_Origem_AreaOperacionalId" Association="Self.FK_dbo_Fluxos_dbo_AreasOperacionais_Origem_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Fluxos" EntitySet="Fluxos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Fluxos_dbo_Clientes_ClienteCorrentista_ClienteId" Association="Self.FK_dbo_Fluxos_dbo_Clientes_ClienteCorrentista_ClienteId">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Fluxos" EntitySet="Fluxos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Fluxos_dbo_Mercadorias_MercadoriaId" Association="Self.FK_dbo_Fluxos_dbo_Mercadorias_MercadoriaId">
+      <End Role="Mercadorias" EntitySet="Mercadorias" />
+      <End Role="Fluxos" EntitySet="Fluxos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Fluxos_dbo_UnidadesMedidas_UnidadeMedidaId" Association="Self.FK_dbo_Fluxos_dbo_UnidadesMedidas_UnidadeMedidaId">
+      <End Role="UnidadesMedidas" EntitySet="UnidadesMedidas" />
+      <End Role="Fluxos" EntitySet="Fluxos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_GruposFluxos_dbo_Ferrovias_FerroviaId" Association="Self.FK_dbo_GruposFluxos_dbo_Ferrovias_FerroviaId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="GruposFluxos" EntitySet="GruposFluxos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ItensCarregamentos_dbo_Carregamentos_CarregamentoId" Association="Self.FK_dbo_ItensCarregamentos_dbo_Carregamentos_CarregamentoId">
+      <End Role="Carregamentos" EntitySet="Carregamentos" />
+      <End Role="ItensCarregamentos" EntitySet="ItensCarregamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ItensCarregamentos_dbo_Vagoes_VagaoId" Association="Self.FK_dbo_ItensCarregamentos_dbo_Vagoes_VagaoId">
+      <End Role="Vagoes" EntitySet="Vagoes" />
+      <End Role="ItensCarregamentos" EntitySet="ItensCarregamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Locomotivas_dbo_Ferrovias_FerroviaProprietaria_FerroviaId" Association="Self.FK_dbo_Locomotivas_dbo_Ferrovias_FerroviaProprietaria_FerroviaId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="Locomotivas" EntitySet="Locomotivas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Locomotivas_dbo_SeriesLocomotivas_SerieLocomotivaId" Association="Self.FK_dbo_Locomotivas_dbo_SeriesLocomotivas_SerieLocomotivaId">
+      <End Role="SeriesLocomotivas" EntitySet="SeriesLocomotivas" />
+      <End Role="Locomotivas" EntitySet="Locomotivas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Movimentacoes_dbo_AreasOperacionais_AreaOperacionalId" Association="Self.FK_dbo_Movimentacoes_dbo_AreasOperacionais_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Movimentacoes" EntitySet="Movimentacoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Paradas_dbo_AreasOperacionais_AreaOperacionalId" Association="Self.FK_dbo_Paradas_dbo_AreasOperacionais_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Paradas" EntitySet="Paradas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Pedidos_dbo_GruposFluxos_GrupoFluxoId" Association="Self.FK_dbo_Pedidos_dbo_GruposFluxos_GrupoFluxoId">
+      <End Role="GruposFluxos" EntitySet="GruposFluxos" />
+      <End Role="Pedidos" EntitySet="Pedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalFim_AreaOperacionalId" Association="Self.FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalFim_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Rotas" EntitySet="Rotas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalInicio_AreaOperacionalId" Association="Self.FK_dbo_Rotas_dbo_AreasOperacionais_AreaOperacionalInicio_AreaOperacionalId">
+      <End Role="AreasOperacionais" EntitySet="AreasOperacionais" />
+      <End Role="Rotas" EntitySet="Rotas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SeriesCarregamentos_dbo_Estados_EstadoId" Association="Self.FK_dbo_SeriesCarregamentos_dbo_Estados_EstadoId">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="SeriesCarregamentos" EntitySet="SeriesCarregamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SeriesCarregamentos_dbo_Ferrovias_FerroviaId" Association="Self.FK_dbo_SeriesCarregamentos_dbo_Ferrovias_FerroviaId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="SeriesCarregamentos" EntitySet="SeriesCarregamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId" Association="Self.FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId">
+      <End Role="ClassesVagoes" EntitySet="ClassesVagoes" />
+      <End Role="SeriesVagoes" EntitySet="SeriesVagoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId" Association="Self.FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="Vagoes" EntitySet="Vagoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId" Association="Self.FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId">
+      <End Role="SeriesVagoes" EntitySet="SeriesVagoes" />
+      <End Role="Vagoes" EntitySet="Vagoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

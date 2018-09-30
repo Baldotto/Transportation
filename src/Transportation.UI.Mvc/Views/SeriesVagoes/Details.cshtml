@@ -1,0 +1,42 @@
+﻿@model Transportation.Application.ViewModels.SerieVagaoViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Series de Vagões</h2>
+
+<div>
+    <h4>Detalhes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClasseVagaoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClasseVagaoId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.SerieVagaoId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

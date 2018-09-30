@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Transportation.Application.ViewModels.FerroviaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ferrovias</h2>
+
+<p>
+    @Html.ActionLink("Novo", "Create")
+</p>
+<table class="table table-striped table-bordered table-hover dataTable-app">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FerroviaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FerroviaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FerroviaId })
+        </td>
+    </tr>
+}
+
+</table>
+@section Scripts {
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.dataTable-app').DataTable();
+});
+</script>
+}

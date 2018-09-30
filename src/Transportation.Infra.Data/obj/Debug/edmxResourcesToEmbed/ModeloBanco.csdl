@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="ClassesVagoes">
+    <Key>
+      <PropertyRef Name="ClasseVagaoId" />
+    </Key>
+    <Property Name="ClasseVagaoId" Type="Guid" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descricao" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="SeriesVagoes" Relationship="Self.FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId" FromRole="ClassesVagoes" ToRole="SeriesVagoes" />
+  </EntityType>
+  <EntityType Name="Ferrovias">
+    <Key>
+      <PropertyRef Name="FerroviaId" />
+    </Key>
+    <Property Name="FerroviaId" Type="Guid" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descricao" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Vagoes" Relationship="Self.FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId" FromRole="Ferrovias" ToRole="Vagoes" />
+  </EntityType>
+  <EntityType Name="SeriesVagoes">
+    <Key>
+      <PropertyRef Name="SerieVagaoId" />
+    </Key>
+    <Property Name="SerieVagaoId" Type="Guid" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descricao" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ClasseVagaoId" Type="Guid" Nullable="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="ClassesVagoes" Relationship="Self.FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId" FromRole="SeriesVagoes" ToRole="ClassesVagoes" />
+    <NavigationProperty Name="Vagoes" Relationship="Self.FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId" FromRole="SeriesVagoes" ToRole="Vagoes" />
+  </EntityType>
+  <EntityType Name="Vagoes">
+    <Key>
+      <PropertyRef Name="VagaoId" />
+    </Key>
+    <Property Name="VagaoId" Type="Guid" Nullable="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Ativo" Type="Boolean" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Bitola" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QuantidadeEixos" Type="Int32" Nullable="false" />
+    <Property Name="CapacidadeNominal" Type="Double" Nullable="false" />
+    <Property Name="Comprimento" Type="Double" Nullable="false" />
+    <Property Name="Largura" Type="Double" Nullable="false" />
+    <Property Name="Altura" Type="Double" Nullable="false" />
+    <Property Name="ComprimentoUtil" Type="Double" Nullable="false" />
+    <Property Name="LarguraUtil" Type="Double" Nullable="false" />
+    <Property Name="VolumeMedio" Type="Double" Nullable="false" />
+    <Property Name="DataFabricacao" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Tara" Type="Double" Nullable="false" />
+    <Property Name="FerroviaOPeradoraId" Type="Guid" Nullable="false" />
+    <Property Name="SerieVagaoId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Ferrovias" Relationship="Self.FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId" FromRole="Vagoes" ToRole="Ferrovias" />
+    <NavigationProperty Name="SeriesVagoes" Relationship="Self.FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId" FromRole="Vagoes" ToRole="SeriesVagoes" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId">
+    <End Role="ClassesVagoes" Type="Self.ClassesVagoes" Multiplicity="1" />
+    <End Role="SeriesVagoes" Type="Self.SeriesVagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClassesVagoes">
+        <PropertyRef Name="ClasseVagaoId" />
+      </Principal>
+      <Dependent Role="SeriesVagoes">
+        <PropertyRef Name="ClasseVagaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId">
+    <End Role="Ferrovias" Type="Self.Ferrovias" Multiplicity="1" />
+    <End Role="Vagoes" Type="Self.Vagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ferrovias">
+        <PropertyRef Name="FerroviaId" />
+      </Principal>
+      <Dependent Role="Vagoes">
+        <PropertyRef Name="FerroviaOPeradoraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId">
+    <End Role="SeriesVagoes" Type="Self.SeriesVagoes" Multiplicity="1" />
+    <End Role="Vagoes" Type="Self.Vagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SeriesVagoes">
+        <PropertyRef Name="SerieVagaoId" />
+      </Principal>
+      <Dependent Role="Vagoes">
+        <PropertyRef Name="SerieVagaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" />
+    <EntitySet Name="ClassesVagoes" EntityType="Self.ClassesVagoes" />
+    <EntitySet Name="Ferrovias" EntityType="Self.Ferrovias" />
+    <EntitySet Name="SeriesVagoes" EntityType="Self.SeriesVagoes" />
+    <EntitySet Name="Vagoes" EntityType="Self.Vagoes" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId" Association="Self.FK_dbo_SeriesVagoes_dbo_ClassesVagoes_ClasseVagaoId">
+      <End Role="ClassesVagoes" EntitySet="ClassesVagoes" />
+      <End Role="SeriesVagoes" EntitySet="SeriesVagoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId" Association="Self.FK_dbo_Vagoes_dbo_Ferrovias_FerroviaOPeradoraId">
+      <End Role="Ferrovias" EntitySet="Ferrovias" />
+      <End Role="Vagoes" EntitySet="Vagoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId" Association="Self.FK_dbo_Vagoes_dbo_SeriesVagoes_SerieVagaoId">
+      <End Role="SeriesVagoes" EntitySet="SeriesVagoes" />
+      <End Role="Vagoes" EntitySet="Vagoes" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

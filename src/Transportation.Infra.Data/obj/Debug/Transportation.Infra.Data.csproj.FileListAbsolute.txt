@@ -1,0 +1,30 @@
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Infra.Data.dll.config
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Infra.Data.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Infra.Data.pdb
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Domain.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Domain.pdb
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.csprojResolveAssemblyReference.cache
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.pdb
+C:\Users\Vinicius\documents\visual studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\aspnet-Transportation.UI.Mvc-20160928104800.mdf
+C:\Users\Vinicius\documents\visual studio 2015\Projects\Transportation\src\Transportation.Infra.Data\bin\Debug\aspnet-Transportation.UI.Mvc-20160928104800_log.ldf
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\aspnet-Transportation.UI.Mvc-20160928104800.mdf
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\aspnet-Transportation.UI.Mvc-20160928104800_log.ldf
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Infra.Data.dll.config
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Infra.Data.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Infra.Data.pdb
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Domain.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\Transportation.Domain.pdb
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.csprojAssemblyReference.cache
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.csproj.CopyComplete
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Infra.Data\obj\Debug\Transportation.Infra.Data.pdb

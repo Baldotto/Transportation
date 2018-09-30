@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Transportation.Application.ViewModels.VagaoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+<h2>Anexar</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Serie
+        </th>
+        <th>
+            Codigo
+        </th>
+        <th>
+            Data Fabricação
+        </th>
+        <th>
+            Codigo Ferrovia Operadora
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerieVagao.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataFabricacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FerroviaOperadora.Codigo)
+        </td>
+        <td>
+            @Html.ActionLink("Anexar", "ExecutarAnexacao", new { IdTrem = ViewBag.IdTrem, idVagao = item.VagaoId }) 
+        </td>
+    </tr>
+}
+
+</table>

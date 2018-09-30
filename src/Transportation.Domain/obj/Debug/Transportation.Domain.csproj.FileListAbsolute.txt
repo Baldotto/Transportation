@@ -1,0 +1,11 @@
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Domain\bin\Debug\Transportation.Domain.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Domain\bin\Debug\Transportation.Domain.pdb
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.dll
+C:\Users\Vinicius\Documents\Visual Studio 2015\Projects\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.pdb
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Domain\bin\Debug\Transportation.Domain.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Domain\bin\Debug\Transportation.Domain.pdb
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.csprojAssemblyReference.cache
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.csproj.CoreCompileInputs.cache
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.dll
+C:\Users\1511 MXTI\Downloads\Transportation\Transportation\src\Transportation.Domain\obj\Debug\Transportation.Domain.pdb

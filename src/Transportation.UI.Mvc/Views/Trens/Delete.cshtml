@@ -1,0 +1,41 @@
+﻿@model Transportation.Application.ViewModels.TremViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Trens</h2>
+
+
+<div>
+    <h4>Remover</h4>
+    <h3>Tem certeza?</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Prefixo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prefixo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OS)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

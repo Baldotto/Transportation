@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9731c9ae-22ce-4f89-8f47-abe58fe7769f" name="UseCase" linkedPackageId="0a5e0076-1857-465f-9940-b02e76ef40c1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="6a533446-9fda-47dd-afa2-9441c9778324" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="9f34a411-3714-45ea-bb31-df2ffd8368f0" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="733f6645-9cec-425d-b565-85b99d24280b">
+          <propertyInstance Id="d94179fb-1502-4fe2-863d-69742aedb707" name="BaseName">
+            <elementDefinition Id="38cf8b09-e1d3-427e-af9c-8c4635ba4d2c" />
+          </propertyInstance>
+          <elementDefinition Id="47cd6cd9-bf49-4849-915c-d0593812e316" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1546958e-1bef-4a6c-8870-d2937fc79e32">
+          <propertyInstance Id="066155f7-39c8-4216-8cec-a1e8f70370aa" name="ClrAttributes">
+            <elementDefinition Id="506c8b9b-b3d2-4b11-b3b7-22c69fd09ae7" />
+          </propertyInstance>
+          <elementDefinition Id="59e0599c-b683-4b2c-bc80-b567e4cfbbb3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4a48a30e-7f7d-4de3-9ea4-27b2f821d6cf">
+          <propertyInstance Id="ef4b9104-adc7-4dc4-8b8e-f35803028686" name="Usings">
+            <elementDefinition Id="78cbb0f2-2550-4958-a1df-9f7f0013d9f0" />
+          </propertyInstance>
+          <elementDefinition Id="3e72261b-9376-4ea4-a80b-69b1676f3796" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="6cd8dd07-2254-47b5-9ea1-2de0cc7af65e" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="7f642fa9-3e2c-48cd-9743-565005e17df8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e4061967-7276-483a-af65-376c58c8d825">
+          <propertyInstance Id="aaf613cc-8104-4281-bea3-1cad7ddc21b2" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="ddd2468f-c805-4a6e-8f5c-b7f30a4acd67" />
+          </propertyInstance>
+          <elementDefinition Id="e9b94bd3-92a7-4b62-a36c-5dd9a45ac100" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e16c7557-5bce-4eaa-bb7c-f3d5c5cd76dc">
+          <propertyInstance Id="3d784457-0f75-43e8-b473-39bcb7246027" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="d2b65a2b-a5eb-457b-a2bf-fe64d8f722ff" />
+          </propertyInstance>
+          <elementDefinition Id="2849c8f2-739b-4835-9177-2384467ff7b0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0adc7e91-fe54-4461-8371-918a3c64aa14">
+          <propertyInstance Id="be0756a7-b4b1-4bd5-9a57-f3e8495d0aa2" name="ProjectPath" value="ClassTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|EnumTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|InterfaceTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|StructTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj">
+            <elementDefinition Id="bdb5e1f2-fa4a-4e98-a6a9-4708a191e134" />
+          </propertyInstance>
+          <elementDefinition Id="a959827a-306c-463f-9ea0-44a53125a825" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="640f0abf-ab5c-4b06-8a03-6c41c3457ab7">
+          <propertyInstance Id="d2fbba41-62c6-4888-be4c-b97491e04ca6" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="60e165b1-8813-4a83-b44b-5e50166ebe85" />
+          </propertyInstance>
+          <elementDefinition Id="03685633-1b40-4c48-ad3a-e096f025525a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4a2b4719-86d8-44fa-ba6d-7febf92be309">
+          <propertyInstance Id="97620912-40e7-4dc1-b98f-1c921da883da" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="1e3b1eb4-4c9a-4268-a798-5f72b387c181" />
+          </propertyInstance>
+          <elementDefinition Id="8f5617f1-d920-410e-8cc2-2bcde98fcd3a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1741a6fd-a87d-4adb-94a9-f25c5ab144aa">
+          <propertyInstance Id="64e190f2-eda1-41e9-80c0-132c778b5651" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="a229187a-a2da-42f8-b698-7ecb21d586d2" />
+          </propertyInstance>
+          <elementDefinition Id="80b1397f-9aa1-4b18-8c67-36b5783ee412" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b072f570-a6ae-435f-80f7-60059eea48f6">
+          <propertyInstance Id="b1c7ebeb-8f24-41a4-b462-89b50d76fc0a" name="Parameters">
+            <elementDefinition Id="497c6bc4-3261-4fad-b763-26279b88a82d" />
+          </propertyInstance>
+          <elementDefinition Id="4942c093-8335-421e-ab7b-61624dd8cabf" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="a6880f6b-5a9e-4ed9-bec6-0bfa3833911b">
+      <profileInstance Id="dc5e186c-e2ce-49b2-80b2-11a7493995da" name="CSharpProfile">
+        <elementDefinition Id="ed196025-0ffa-4f0c-9714-88ce018663b6" />
+      </profileInstance>
+      <elementDefinition Id="8625bf6e-cda2-41ed-a755-38de9fd3ffbe" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5666d36b-fb94-4cd6-88cb-1ff040ff014f">
+      <profileInstance Id="7e37c810-89ea-444f-99f9-8667e4f5bf95" name="TextTemplateBindings">
+        <elementDefinition Id="82ba241a-cd2e-4669-96ff-ccae5b02142e" />
+      </profileInstance>
+      <elementDefinition Id="a5f59692-efeb-488f-b302-5d1334c042e7" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fb22bbe2-99e1-402a-a07f-e2f5aeeb8521" name="Carregar Vagão" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7385c48-d234-433b-b5a5-f851c78c24b3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0f75e1ff-c565-48e7-b56d-4329e252b640" name="Formar  Trem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dc27470-8b5a-4877-8e5b-d3cfca043b0c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="afbca579-a780-4e13-b4df-b75332b2c780" name="Liberar Trem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="500805b9-dad5-408b-9bc7-aa04d0a96bd7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2f489280-3ebe-4fe0-aba2-c09f42dbe019" name="Posicionar Vagão " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20c05952-68f1-46d6-be4a-8d53be1f2d3e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5856b755-ae01-42bc-bb55-62c57625a92b" name="Manobrar Vagão " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="35dae886-a776-4846-8b1e-c088b502f7ef" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="69dcf674-8120-4d01-a892-3d4658e67820" name="Planejar Carga" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65ac81cb-58af-4462-b70b-2b3dd2d026bf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4f9e44dd-6acd-4eb0-92f6-6c8aedb716c4" name="Movimentar Trem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2b17d9b-f8d2-42f8-a3f8-300e6fa89f68" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f4493d7b-7554-44d3-aa60-fc1998116f00" name="Parar Trem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93ff7201-4248-412a-b20c-2c68e7a01e5b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5b04ce81-9a09-42ce-856a-e0bada5405a0" name="Atualizar Composição" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8a5521c-938e-40d8-b335-1e7e70a5be98" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="85dadc8f-42e9-4857-9588-1aed32fd397b" name="Usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8940b2a3-eca4-4527-bbbf-d2101f04dccb" />
+        <targetEnds>
+          <association Id="57c63e70-19b1-4bd2-8d58-274ce105cc78" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Atualizar Composição" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5b04ce81-9a09-42ce-856a-e0bada5405a0" LastKnownName="Atualizar Composição" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad2e6ff3-e239-40df-a200-adfcce867c9d" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1c6f8c16-d62b-4d46-b2fc-411e69e10fee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa247879-6af6-4d7c-b544-9f596e74bd69" name="Atualizar Composição" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25f7aa1d-856a-41f5-afb3-6ccab54a9179" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb8b3e51-4af9-4213-bf6f-b9e71bdec851" />
+          </association>
+          <association Id="8f6cebdd-6a53-40cc-a777-6e579aebb382" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Carregar Vagão" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fb22bbe2-99e1-402a-a07f-e2f5aeeb8521" LastKnownName="Carregar Vagão" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a5a84c1-0969-4855-86d2-62eedbcacd8b" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dde33270-17aa-4561-8ca0-c4fddb1b5559" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83c23ed8-8cb2-41e4-a339-d159db85f14f" name="Carregar Vagão" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="69608fa5-de98-4dbb-8a57-64b45e217cb7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4ceaf43c-9f17-4be9-8c62-2ef0d73b36a1" />
+          </association>
+          <association Id="0de0cee4-e130-45c7-8127-8ff7b217f2b3" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Liberar Trem" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="afbca579-a780-4e13-b4df-b75332b2c780" LastKnownName="Liberar Trem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3121b99b-a30e-4eea-aba8-5c36c1c48707" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1c496a4f-5734-4c84-8375-e639e76af780" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1432978-1ad2-4413-acd3-510310fb6b89" name="Liberar Trem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="494a5a43-e32c-4702-b76f-4d2ae4adc441" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="949790b7-d82f-48d4-b91b-45411bc9c9ff" />
+          </association>
+          <association Id="da221a9d-5350-4c0f-b153-9ea228ba895b" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Movimentar Trem" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4f9e44dd-6acd-4eb0-92f6-6c8aedb716c4" LastKnownName="Movimentar Trem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd67631b-4f01-4cb6-9254-98f23338fde9" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9fa5e306-846c-4063-9dca-10b7b2c26f80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="421ddc8f-c738-42a4-be82-b3aea9be8cf1" name="Movimentar Trem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25a8ae82-23e1-477c-abea-b25947a3f68e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5e568b0d-59f0-48c7-adea-dc54bfebd53c" />
+          </association>
+          <association Id="8536c13a-b436-4de7-a790-04f3cacc1a01" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Parar Trem" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f4493d7b-7554-44d3-aa60-fc1998116f00" LastKnownName="Parar Trem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bcb52d6-5ffc-4e65-82b2-05b41e7f5d6e" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e8a856e2-12fe-46d1-9280-3dd877eb47f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3629fe95-0891-4e79-9915-e364920cb20e" name="Parar Trem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ba5f6ce-b631-499c-9c51-4a57235508a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="013cac9d-5071-4faf-89c4-4194b2ae556a" />
+          </association>
+          <association Id="3fa21f71-e4fd-4f4e-b927-6f0d65526dd1" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Posicionar Vagão " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2f489280-3ebe-4fe0-aba2-c09f42dbe019" LastKnownName="Posicionar Vagão " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2c02daa-a455-467b-86b1-9f4dacdbd2d9" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="30cd0a1e-99b1-477a-8177-c0069e0f8981" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f5d3faf-2b41-480f-8ac2-9d0f86dbfbe6" name="Posicionar Vagão " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b1f8341-db21-41e9-bec7-ea5ef10fcb63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b24a8dc1-6dee-40bc-b098-df526b6dbcb2" />
+          </association>
+          <association Id="a1f27da6-7ae2-443d-b47f-6fdf731a17f5" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Manobrar Vagão " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5856b755-ae01-42bc-bb55-62c57625a92b" LastKnownName="Manobrar Vagão " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96d81677-3b72-4b98-b41d-1c103b0ca27b" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8e828b36-dd8d-4070-802d-371bc3702676" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4f19d5a-d35a-487b-a451-3c84a65565af" name="Manobrar Vagão " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="75e2dce5-282b-45a9-abaf-acdbf1c65014" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cbe9676f-bf20-4c52-b2fb-290661eaa785" />
+          </association>
+          <association Id="7dc450d3-019d-426b-b46a-90159387eab8" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Planejar Carga" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="69dcf674-8120-4d01-a892-3d4658e67820" LastKnownName="Planejar Carga" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7d5a7f2-be7e-43c2-b74e-33747880909c" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3c2be511-8ab6-428f-bb4d-80b08ae41462" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf96ba2e-1102-4d60-8aca-40175293d021" name="Planejar Carga" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="47b48dba-1035-477e-b4a8-8149be0ee54e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d7e301ff-35f3-4da8-b86b-749fc2d85cf2" />
+          </association>
+          <association Id="cba10eb7-7529-41fc-aa2d-1777c6bf4777" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Formar  Trem" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0f75e1ff-c565-48e7-b56d-4329e252b640" LastKnownName="Formar  Trem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71ed4edf-7ca5-4abb-80fd-a9f9242845a9" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e35d0334-8f17-4785-a702-56f08b75d558" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e96337fd-3dec-4800-8104-67ecf9cbb2de" name="Formar  Trem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9801702e-5818-4daa-8d15-5b6d66a7af40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d78e396c-8b75-41a0-b651-87c128d32903" />
+          </association>
+          <association Id="d26024a7-a78f-4403-9bcd-f4c410a43997" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="569cac4d-eb38-4fb0-affc-221b9feedba2" LastKnownName="Descarregar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="556f5e75-73c6-4d6e-adba-de49b7ff9c9b" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d723995a-71b4-43ab-bd51-14423800cf3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fff12b13-6d82-42b5-976f-80514289697d" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57755bb8-ccd8-4a6a-bb3a-510041f01653" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40386af3-7feb-4a75-8589-1d9851fc0565" />
+          </association>
+          <association Id="8f936d05-e5b3-4010-a0df-07f682c3adc3" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Encerrar Trem" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="70733e57-e7bf-463a-bac4-7b09cb516242" LastKnownName="Encerrar Trem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c373e9f-22ad-4afe-9936-0d522246b1bb" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3848fc87-aae7-4056-a042-0fdb65b8d00d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="240c2a14-0028-4746-a70d-392f1ffd17a8" name="Encerrar Trem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="63915ff8-81b7-42ad-9fca-cde5e008f3da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8934485b-ffa9-4767-8561-1479cfef42df" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="240af1cf-7200-4689-97d8-171ba9f01dc6" name="Manter Vagao" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5337dacf-0e9d-4ea9-a4b5-11bad7104cc6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4894ccec-391f-457f-bb12-ea0629345ecf" name="Manter Locomotiva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c073164a-c1e9-44fc-9d61-49ff72ce69cf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4058d2a5-1cc0-40d6-bbdb-663111271805" name="Manter Serie do Vagao" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4890c1a3-05b8-457d-90cc-df82814f5100" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="569cac4d-eb38-4fb0-affc-221b9feedba2" name="Descarregar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7097426a-924f-41b9-8345-b28d225e4a96" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="70733e57-e7bf-463a-bac4-7b09cb516242" name="Encerrar Trem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="52da97c2-0df6-4d81-91b5-d4a92aca9287" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f5491959-35cb-4a4f-a1da-06a8af602aaf" name="Manter Serie Locomotiva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f02d7d1c-b473-4205-b804-fc31907bc55d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="208840c0-3667-43d2-a1fd-d89342bcc35a" name="Normativo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="45cd643b-2634-48fd-b7fb-6d6448c719a6" />
+        <targetEnds>
+          <association Id="eae59363-2995-4bf5-98fb-ad306d47102b" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Vagao" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="240af1cf-7200-4689-97d8-171ba9f01dc6" LastKnownName="Manter Vagao" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48d544de-d966-41de-9834-3112a77a1e26" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="08e5fb02-c139-4a76-9dbd-6d7827a0d49a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7def1be4-5471-4a65-b607-8a1e2007f125" name="Manter Vagao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0268f5ea-f3fd-4518-9d08-76a19ea6bacd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f6a68b80-1c45-40ef-8c2b-4749b752b217" />
+          </association>
+          <association Id="e313447d-b14e-4836-ae6d-327ccfaf29e7" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Locomotiva" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4894ccec-391f-457f-bb12-ea0629345ecf" LastKnownName="Manter Locomotiva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0dc6f8bb-0c86-40ad-a1be-a3cff2b3f90d" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06647a9a-0f44-4008-bb7d-2a68969fca64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fdaebb33-e28c-4b97-833b-bb15c7a8bdc5" name="Manter Locomotiva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eff7fc40-118c-47fc-94f5-32c5f2ca7efe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ac694e41-d33b-4a5f-9452-5d235454f4e2" />
+          </association>
+          <association Id="098bcfa2-8b7a-4c7a-9bd2-22aaeb6b6044" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Serie do Vagao" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4058d2a5-1cc0-40d6-bbdb-663111271805" LastKnownName="Manter Serie do Vagao" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14d5fd0a-0fac-4ea4-9b95-5e607d89e09b" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="eaa6f95c-3163-445d-ae45-1a0c4230f4a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0ef5a74-89e1-4dc1-9c86-a70865c74364" name="Manter Serie do Vagao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ecff5c7-6b41-4e9a-9566-21ccda11d18a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c6cf8f08-5dc0-47a1-82ed-f2902adbd677" />
+          </association>
+          <association Id="87f15b5a-360a-4b50-85b5-c9db4f8edd64" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Normativo" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="208840c0-3667-43d2-a1fd-d89342bcc35a" LastKnownName="Normativo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfb386cc-0cb2-445c-855c-6a31db9119f5" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c936f0e3-e298-46af-bea5-82dea96e5f2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e284c56-a71c-4b2c-bcb5-e87a67c80c2f" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4de3635a-fc20-4a3c-a70a-f5f07040bb1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dcbfe7f7-fdaf-43e3-a0da-bc5cb369aefc" />
+          </association>
+          <association Id="b8078bb9-9e8c-4788-bbdf-3b68d53b8ebe" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Serie Locomotiva" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f5491959-35cb-4a4f-a1da-06a8af602aaf" LastKnownName="Manter Serie Locomotiva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7cf53c67-a265-499c-9636-deecbfb3a493" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1241ddb3-f268-49eb-b165-247fff64ed3b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="42b45e85-396a-4bce-858d-9a0070477758" name="Manter Serie Locomotiva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94f82d89-595d-4c36-9c6a-97ee2e5600d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ac33a00c-2d8a-431c-bb66-d557abb28b8b" />
+          </association>
+          <association Id="a0760243-0b35-40bb-b20e-99751ba3b1c2" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Area Operacional" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6fc140e3-769a-4cdb-9183-9ab4b18046f2" LastKnownName="Manter Area Operacional" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e8ad4ac-c9a3-4210-9b6b-93b4c770d8a4" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bf0e6e03-ad9b-4cdb-a638-1721bb924e44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5044c807-78df-4082-9bf1-a66f02b6f40e" name="Manter Area Operacional" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="945103ec-509e-4875-bea0-d39756a1267a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9f1967e2-b65a-4c68-8711-0d50f87475a4" />
+          </association>
+          <association Id="5be5fbed-0c4f-40dc-be4e-b2754f6954c9" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Classe Vagao" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="824bc478-1912-4dea-97c8-18139219ec18" LastKnownName="Manter Classe Vagao" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="925f97da-66b5-4b17-a900-8a156d695e12" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="db41f02b-c5e8-47e8-abb3-d419734903e4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90fbd811-4eba-431e-9b1f-63de67a3bc54" name="Manter Classe Vagao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9fa6c83-b287-4908-a7d7-f2f7eb1918d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="65a20047-2511-4607-a342-11640421cd96" />
+          </association>
+          <association Id="095f3b85-081c-4e75-8eff-b87daf3ebb05" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Usuario" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8ca0f1b1-8c2a-4f1d-9cf5-6942bcf23c98" LastKnownName="Manter Usuario" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cec2aff-a05b-4596-bc47-18431f2a728f" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0e9f8797-b52f-4dcd-bf88-4e8b96100358" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc86696a-2e6e-44cc-bd21-6d5f0286e3d1" name="Manter Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7360b3da-e29a-4bdb-81cd-79ca9bd7d85d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea1f75aa-c555-47e5-a5db-d7344df9f0ff" />
+          </association>
+          <association Id="33232481-5cbe-4220-8c11-88d9fd372cb3" isDerived="false" sourceEndRoleName="Normativo" targetEndRoleName="Manter Classe Locomotiva" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d537e1c2-7373-4251-b4b0-184af05f107e" LastKnownName="Manter Classe Locomotiva" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b100e406-0edd-42c2-8e74-00e72cef5c9e" name="Normativo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="da21d136-8178-49d9-9efb-9b1b1924cc8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8d85581-4f39-4dec-b1a0-b6af3696f078" name="Manter Classe Locomotiva" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9199603-7da0-4482-b0ec-7c774cf4ed59" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8b336341-97db-4b55-a00e-242b43d19c31" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6fc140e3-769a-4cdb-9183-9ab4b18046f2" name="Manter Area Operacional" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17fd3f1b-18e6-4fe0-b0df-361e9118ab40" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="824bc478-1912-4dea-97c8-18139219ec18" name="Manter Classe Vagao" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7db41eba-4c21-4e58-9be6-4053c447f3c9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d537e1c2-7373-4251-b4b0-184af05f107e" name="Manter Classe Locomotiva" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad831e94-b903-4705-87ce-a75c16d75167" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ca0f1b1-8c2a-4f1d-9cf5-6942bcf23c98" name="Manter Usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c14ee6a8-a566-499d-b61a-498ae65cedb8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a43a726a-8f1a-4131-92b7-1fe3fd9d6fbc" name="Gerente de Area" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b289474-f05a-44a4-982d-c4e5874ec71b" />
+        <targetEnds>
+          <association Id="8b9ddd9e-fc4f-432b-8a0e-4612e4a14233" isDerived="false" sourceEndRoleName="Gerente de Area" targetEndRoleName="Emitir Relatorio Gerencial " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="65f0f061-0be9-4527-95d3-36e8710ac1d3" LastKnownName="Emitir Relatorio Gerencial " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="606bbb40-663a-4554-aa27-e96672455579" name="Gerente de Area" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bea0c83d-4e9a-4491-b6a5-79a37e4b5f25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2532b3f-0e8b-4e67-ad2f-f2aff34e2bdd" name="Emitir Relatorio Gerencial " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f277ebcf-fc61-4362-9cad-e4685f1a35ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a970fba3-5e4e-40e6-ad7b-1ccfd1d6d5e3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="65f0f061-0be9-4527-95d3-36e8710ac1d3" name="Emitir Relatorio Gerencial " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0afc3526-d16d-4ce8-a91f-14ea42f60450" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a517305b-6e41-440d-af6c-2fbe5898025a" name="Surpevisor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0519597a-6ef2-4a74-b80e-64163c15f957" />
+        <targetEnds>
+          <association Id="fa29aab0-f778-4087-ba0a-7c1b106b4fc6" isDerived="false" sourceEndRoleName="Surpevidor" targetEndRoleName="Emitir indicadores Operacionais" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5095e8d2-8079-4b06-923d-3e677369b358" LastKnownName="Emitir indicadores Operacionais" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c04bd74-738d-4592-9f53-e31d9bc5ba2a" name="Surpevidor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fc48985c-2ce9-43e7-865f-0aeec1401197" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="826ed291-8b5d-4c4f-b251-62a03365d973" name="Emitir indicadores Operacionais" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="374cb225-7488-4515-8c54-08f55eb5a4e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9eb83e87-1ac6-436a-ba8a-b145d94f1770" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5095e8d2-8079-4b06-923d-3e677369b358" name="Emitir indicadores Operacionais" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6910c5da-4b81-467e-8e1e-b61b98878bda" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0a5e0076-1857-465f-9940-b02e76ef40c1" name="Transportation.Desing.UML">
+    <elementDefinition Id="bbcb7f00-5509-4e6e-99df-97fd2eed0377" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ef362ffa-961a-4189-a329-3070eca442ca">
+        <profileInstance Id="6e4df111-e383-431e-a0f3-9471f75f72ff" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4c025d8d-e9e5-44b9-b439-3687876c8649">
+        <profileInstance Id="6e4914c2-b0cf-495b-8ccc-7a395c1977d9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,130 @@
+﻿@model Transportation.Application.ViewModels.VagaoViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Vagões</h2>
+
+
+<div>
+
+    <h4>Remover</h4>
+    <h3>Tem certeza?</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SerieVagao.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerieVagao.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bitola)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bitola)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantidadeEixos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantidadeEixos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CapacidadeNominal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CapacidadeNominal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comprimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comprimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Largura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Largura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComprimentoUtil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComprimentoUtil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LarguraUtil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LarguraUtil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VolumeMedio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VolumeMedio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataFabricacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataFabricacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tara)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tara)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="37107812-06cd-492e-9863-89bcf776c5c1"
+  name="Application" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bb6614d1-8236-4cae-b00b-ea6bd91d9b9b"
+        name="CarregamentoAppService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="45941ffd-2b5d-4bff-a77b-53b3b6e61191">
+            <interfaceMoniker
+              Id="9c13a750-c083-4db4-974b-c9c6dd10ae5f"
+              LastKnownName="ICarregamentoAppService"
+              LastKnownLocation="Package_0952.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="cfd35523-61c5-400f-a0ac-7b9321d2c20e">
+            <interfaceMoniker
+              Id="38c4de50-1a20-4c5c-94d4-35c676975a59"
+              LastKnownName="ICarregamentoAppService"
+              LastKnownLocation="Package_0952.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e5cfb758-0ed8-49d2-a67e-56986f20338c"
+            name="Carregar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="820a42cc-afe7-421a-a427-ff507a21e865"
+            name="Descarregar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9c13a750-c083-4db4-974b-c9c6dd10ae5f"
+        name="ICarregamentoAppService"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04acb210-4c50-4860-9e90-28e514d5fd0b"
+        name="VagaoAppService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8d016376-0727-41f5-8b46-5a1727869f8e">
+            <interfaceMoniker
+              Id="b1465991-63de-4d18-803a-2d506703d62a"
+              LastKnownName="IVagaoAppService"
+              LastKnownLocation="Package_0952.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a18369f0-7783-43e9-b32c-727f5492af45"
+            isDerived="false"
+            sourceEndRoleName="VagaoAppService"
+            targetEndRoleName="CarregamentoAppService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bb6614d1-8236-4cae-b00b-ea6bd91d9b9b"
+              LastKnownName="CarregamentoAppService"
+              LastKnownLocation="Package_0952.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32a0910d-fa6f-4124-89f5-3db3abef10d0"
+                  name="VagaoAppService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35791ea2-bdc3-4d5f-9d37-a1315973cbfd"
+                  name="CarregamentoAppService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15bb4506-f444-42f5-bb34-ebaef05d469e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="706e8c3e-3d48-497a-b44a-45dadb4b14d1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="a8939ad8-853c-415e-a364-693316b6f0a0"
+            name="BuscarTodos"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a65c18fe-bd31-4632-a126-b39894cce26a"
+            name="BuscarPorId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="38c4de50-1a20-4c5c-94d4-35c676975a59"
+        name="ICarregamentoAppService"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="d55c272c-e0a7-4a75-bd49-cb7242640cd1"
+            name="Carregar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9b42b7de-4485-4fe2-93fd-8e722a0bb3c6"
+            name="Descarregar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b1465991-63de-4d18-803a-2d506703d62a"
+        name="IVagaoAppService"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="712b9edb-68cb-4590-a519-acdd6a9647e5"
+            name="BuscarPorId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ebf4a9a9-4af4-4a38-8133-6e3fe9af29c9"
+            name="BuscarTodos"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

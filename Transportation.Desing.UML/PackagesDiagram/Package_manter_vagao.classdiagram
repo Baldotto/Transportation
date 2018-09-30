@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="79a1059a-d8ee-48a1-b28d-aec2aeb6658e" name="Package_manter_vagao" linkedPackageId="8e280acd-8cd9-4b2d-94cf-dfabde5089fc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="c8964e53-d311-4ef3-b9cd-de4ec7e2efbf" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="9f34a411-3714-45ea-bb31-df2ffd8368f0" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a9b7dc28-1240-4ed0-a51b-1ba7341ccc68">
+          <propertyInstance Id="e0452e15-0a21-4a09-be63-a51a5b1e8e91" name="BaseName">
+            <elementDefinition Id="38cf8b09-e1d3-427e-af9c-8c4635ba4d2c" />
+          </propertyInstance>
+          <elementDefinition Id="47cd6cd9-bf49-4849-915c-d0593812e316" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f19768e8-a632-4d41-8733-81fd1b8875ac">
+          <propertyInstance Id="0c81637b-3629-4c00-b1a3-0dc865da9220" name="ClrAttributes">
+            <elementDefinition Id="506c8b9b-b3d2-4b11-b3b7-22c69fd09ae7" />
+          </propertyInstance>
+          <elementDefinition Id="59e0599c-b683-4b2c-bc80-b567e4cfbbb3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="520cb93c-d2c5-4662-b5d2-0e1faf48b459">
+          <propertyInstance Id="64147d1f-544f-4a84-81fd-24f91260af63" name="Usings">
+            <elementDefinition Id="78cbb0f2-2550-4958-a1df-9f7f0013d9f0" />
+          </propertyInstance>
+          <elementDefinition Id="3e72261b-9376-4ea4-a80b-69b1676f3796" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="ee616fef-c2d8-4f7b-a8a6-6c2c75c29a6d" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="7f642fa9-3e2c-48cd-9743-565005e17df8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e2f49349-f29a-4264-8192-2ecc82da82e9">
+          <propertyInstance Id="2bdb437c-09ff-4269-90cf-d317009aac0f" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="ddd2468f-c805-4a6e-8f5c-b7f30a4acd67" />
+          </propertyInstance>
+          <elementDefinition Id="e9b94bd3-92a7-4b62-a36c-5dd9a45ac100" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d4f14661-62da-4fa0-bdc6-a403cdfcbe6d">
+          <propertyInstance Id="5a5618b5-60cb-4d6d-a377-dae0735720ca" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="d2b65a2b-a5eb-457b-a2bf-fe64d8f722ff" />
+          </propertyInstance>
+          <elementDefinition Id="2849c8f2-739b-4835-9177-2384467ff7b0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f07398f5-8872-4b9e-9b29-e5a96c625cb3">
+          <propertyInstance Id="c937a5e0-1106-40a9-a46e-3798e7c47db0" name="ProjectPath" value="ClassTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|EnumTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|InterfaceTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj|StructTemplate=..\Transportation.Desing.UMLLib\Transportation.Desing.UMLLib.csproj">
+            <elementDefinition Id="bdb5e1f2-fa4a-4e98-a6a9-4708a191e134" />
+          </propertyInstance>
+          <elementDefinition Id="a959827a-306c-463f-9ea0-44a53125a825" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4a658bee-e532-420c-a82c-f82461964284">
+          <propertyInstance Id="06acf41a-5748-4fbb-8207-1749ef692a5a" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="60e165b1-8813-4a83-b44b-5e50166ebe85" />
+          </propertyInstance>
+          <elementDefinition Id="03685633-1b40-4c48-ad3a-e096f025525a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7bb3e49f-87d0-4c18-8bf0-e03bc6afc18f">
+          <propertyInstance Id="f5cbefbe-6e6c-456f-8f04-41552391d2a7" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="1e3b1eb4-4c9a-4268-a798-5f72b387c181" />
+          </propertyInstance>
+          <elementDefinition Id="8f5617f1-d920-410e-8cc2-2bcde98fcd3a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2a853984-bc1d-4bec-896b-df2c08a94436">
+          <propertyInstance Id="1a95004a-2cd9-4dd5-9732-73f29f345532" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="a229187a-a2da-42f8-b698-7ecb21d586d2" />
+          </propertyInstance>
+          <elementDefinition Id="80b1397f-9aa1-4b18-8c67-36b5783ee412" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5315ef04-ff5c-48c9-a3a8-662961de8555">
+          <propertyInstance Id="7b7463c5-bfc1-4d57-aca3-98453fc2b99d" name="Parameters">
+            <elementDefinition Id="497c6bc4-3261-4fad-b763-26279b88a82d" />
+          </propertyInstance>
+          <elementDefinition Id="4942c093-8335-421e-ab7b-61624dd8cabf" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="6fc061c1-8d24-4c2f-98c2-d82318268716">
+      <profileInstance Id="3f301ca1-303d-466e-ae17-f108093c1305" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="54560e48-d330-4e0a-844a-6b65b6c21dda">
+      <profileInstance Id="5d165aef-0a04-4f81-9a3c-e4bc1d83e914" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="10ff19ac-b41b-44be-9813-00599fcf350b">
+      <profileInstance Id="c9871573-c644-44db-a210-d7da02873a08" name="CSharpProfile">
+        <elementDefinition Id="ed196025-0ffa-4f0c-9714-88ce018663b6" />
+      </profileInstance>
+      <elementDefinition Id="8625bf6e-cda2-41ed-a755-38de9fd3ffbe" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dadc7a30-8bbb-417d-beea-0f6ee8e6bdd0">
+      <profileInstance Id="cf9214d1-f376-4057-809b-156dc76b4dd1" name="TextTemplateBindings">
+        <elementDefinition Id="82ba241a-cd2e-4669-96ff-ccae5b02142e" />
+      </profileInstance>
+      <elementDefinition Id="a5f59692-efeb-488f-b302-5d1334c042e7" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="88db6c1d-0608-45ea-a574-d29ed51ab3d6" name="Subsistema de vagões ">
+        <elementDefinition Id="3f7ce7ce-82c0-4065-adfa-940632390dfd" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="f24a97a3-9281-4e06-9998-9a9e35924da9" name="UI_Manter_Vagão">
+              <elementDefinition Id="c5cc6bb7-060d-429a-ae8a-a1fae16bcbc0" />
+              <suppliersInternal>
+                <dependency Id="3657db4e-8a00-4216-8f72-346faf30f8c7">
+                  <packageMoniker Id="5306015f-42be-4a59-b6d8-24ed8c92de55" LastKnownName="Application_Manter_Vagão" />
+                  <elementDefinition Id="1b1719c9-39b0-4d6e-a246-d8d4033181a2" />
+                </dependency>
+              </suppliersInternal>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="5306015f-42be-4a59-b6d8-24ed8c92de55" name="Application_Manter_Vagão">
+              <elementDefinition Id="27fec799-66ba-47a3-a5c0-0f279061ca3d" />
+              <suppliersInternal>
+                <dependency Id="35396bce-6c46-4193-8b3b-77ba951b75d0">
+                  <packageMoniker Id="4086e107-3ebc-47c8-a1f1-4461c1be020d" LastKnownName="Domain_Manter_Vagão" />
+                  <elementDefinition Id="40c251b5-72b8-44bd-ab12-b0efadf4f54c" />
+                </dependency>
+              </suppliersInternal>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="3f105d32-c86d-4d4a-a0cf-28a259e1f3c5" name="Infra.Data_Manter_Vagão">
+              <elementDefinition Id="e54b2aca-3880-4d76-9124-9a454e16f299" />
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="4086e107-3ebc-47c8-a1f1-4461c1be020d" name="Domain_Manter_Vagão">
+              <elementDefinition Id="94078a80-4c59-48f5-b78d-4be79c9e59be" />
+              <suppliersInternal>
+                <dependency Id="fc338ce7-2108-4f5f-b94b-76c80407a322">
+                  <packageMoniker Id="3f105d32-c86d-4d4a-a0cf-28a259e1f3c5" LastKnownName="Infra.Data_Manter_Vagão" />
+                  <elementDefinition Id="2485cbac-7348-4079-a846-5da85719e356" />
+                </dependency>
+              </suppliersInternal>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="8e280acd-8cd9-4b2d-94cf-dfabde5089fc" name="Transportation.Desing.UML">
+    <elementDefinition Id="bbcb7f00-5509-4e6e-99df-97fd2eed0377" />
+  </package>
+</logicalClassDesignerModel>

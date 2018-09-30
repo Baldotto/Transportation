@@ -1,0 +1,13 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery-validation-unobtrusive": "*",
+    "modernizr": "*",
+    "respond": "*",
+    "font-awesome": "4.6.1",
+    "html5shiv": "3.7.3",
+    "DataTables": "^1.10.12"
+  }
+}

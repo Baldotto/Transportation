@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Transportation.Application.ViewModels.SerieVagaoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Series de Vagões</h2>
+
+<p>
+    @Html.ActionLink("Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            Classe
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClasseVagao.Codigo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SerieVagaoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SerieVagaoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SerieVagaoId })
+        </td>
+    </tr>
+}
+
+</table>

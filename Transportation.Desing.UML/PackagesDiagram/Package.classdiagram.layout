@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="b3b07112-74eb-44ec-9ae4-c193b5a3ac79" />
+  <nestedChildShapes>
+    <packageShape Id="3d0fa77d-404b-484e-a51a-1d56c0a306de" absoluteBounds="2.5, 0.875, 4.5, 3" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="cdd79048-783e-4ae5-86a0-5b9c5925eef7" LastKnownName="Sistema" />
+      <nestedChildShapes>
+        <packageShape Id="09e1c03a-eb11-46bd-83c6-3f9bf576bd37" absoluteBounds="2.625, 2.75, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+          <packageMoniker Id="3c7aaf95-a4e4-40d5-9017-3baddfd5df4c" LastKnownName="Cadastros" />
+        </packageShape>
+        <packageShape Id="1eaed7c8-ca23-4705-bb30-47e7b5e7c0bd" absoluteBounds="2.625, 1.25, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+          <packageMoniker Id="a048943d-a53b-4eee-a47b-cb9f225ca43d" LastKnownName="Operações" />
+        </packageShape>
+        <packageShape Id="4a86f6ec-fc49-435b-bdf5-8318ba648116" absoluteBounds="4.875, 1.25, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+          <packageMoniker Id="9cd7936e-cd36-4863-b50a-b38aa4f96ae4" LastKnownName="Relatórios" />
+        </packageShape>
+      </nestedChildShapes>
+    </packageShape>
+    <dependencyConnector edgePoints="[(3.375 : 2.75); (3.375 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="ab235dbf-3ff4-4e40-89db-e0fc1363a8c7" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="09e1c03a-eb11-46bd-83c6-3f9bf576bd37" />
+        <packageShapeMoniker Id="1eaed7c8-ca23-4705-bb30-47e7b5e7c0bd" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(4.125 : 1.75); (4.875 : 1.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="a2feffa9-39d0-48b9-aa15-326a2384cf70" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="1eaed7c8-ca23-4705-bb30-47e7b5e7c0bd" />
+        <packageShapeMoniker Id="4a86f6ec-fc49-435b-bdf5-8318ba648116" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(5.625 : 2.25); (5.625 : 3.25); (4.125 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="0a8f617c-1a92-4168-8481-e7f392641dd1" />
+      <relativeChildShapes />
+      <nodes>
+        <packageShapeMoniker Id="4a86f6ec-fc49-435b-bdf5-8318ba648116" />
+        <packageShapeMoniker Id="09e1c03a-eb11-46bd-83c6-3f9bf576bd37" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

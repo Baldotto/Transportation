@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    
+    <link href="~/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/bower_components/DataTables/media/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="~/bower_components/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/Site.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="~/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+        <script src="~/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="navbar navbar-fixed-top" id="top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="/" class="navbar-brand">Transportation</a>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Ferrovias", "Index", "Ferrovias")</li>
+                            <li>@Html.ActionLink("Classes de Vagões", "Index", "ClassesVagoes")</li>
+                            <li>@Html.ActionLink("Series Vagões", "Index", "SeriesVagoes")</li>
+                            <li>@Html.ActionLink("Vagões", "Index", "Vagoes")</li>
+                            <li>@Html.ActionLink("Areas Operacionais", "Index", "Vagoes")</li>
+                            <li>@Html.ActionLink("Fluxos", "Index", "Vagoes")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Operação <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Anexar Vagões", "AnexarVagoes", "Trens")</li>
+                            <li>@Html.ActionLink("Carregamentos", "Index", "Ferrovias")</li>
+                            <li>@Html.ActionLink("Movimentações", "Index", "Ferrovias")</li>
+                            <li>@Html.ActionLink("Descarregamentos", "Index", "Ferrovias")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planejamento <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Trens", "Index", "Trens")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Relatório <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("N/A", "Index", "Ferrovias")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">&copy; @DateTime.Now.Year - Transportation</p>
+        </div>
+    </footer>
+
+    <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/bower_components/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+    <script src="~/bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

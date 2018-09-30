@@ -1,0 +1,34 @@
+﻿@model Transportation.Application.ViewModels.TremViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Trens</h2>
+
+<div>
+    <h4>Detalhes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Prefixo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prefixo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.TremId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

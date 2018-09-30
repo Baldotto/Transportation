@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities2">
+    <EntitySetMapping Name="Abastecimentos">
+      <EntityTypeMapping TypeName="Model.Abastecimentos">
+        <MappingFragment StoreEntitySet="Abastecimentos">
+          <ScalarProperty Name="AbastecimentoId" ColumnName="AbastecimentoId" />
+          <ScalarProperty Name="QuantidadeAbastecida" ColumnName="QuantidadeAbastecida" />
+          <ScalarProperty Name="LocomotivaId" ColumnName="LocomotivaId" />
+          <ScalarProperty Name="AreaOperacionalId" ColumnName="AreaOperacionalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AreasOperacionais">
+      <EntityTypeMapping TypeName="Model.AreasOperacionais">
+        <MappingFragment StoreEntitySet="AreasOperacionais">
+          <ScalarProperty Name="AreaOperacionalId" ColumnName="AreaOperacionalId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="FerroviaOperadoraId" ColumnName="FerroviaOperadoraId" />
+          <ScalarProperty Name="FerroviaOperadora_FerroviaId" ColumnName="FerroviaOperadora_FerroviaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carregamentos">
+      <EntityTypeMapping TypeName="Model.Carregamentos">
+        <MappingFragment StoreEntitySet="Carregamentos">
+          <ScalarProperty Name="CarregamentoId" ColumnName="CarregamentoId" />
+          <ScalarProperty Name="MercadoriaId" ColumnName="MercadoriaId" />
+          <ScalarProperty Name="QuantidadeCarregada" ColumnName="QuantidadeCarregada" />
+          <ScalarProperty Name="NotaFiscalId" ColumnName="NotaFiscalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassesVagoes">
+      <EntityTypeMapping TypeName="Model.ClassesVagoes">
+        <MappingFragment StoreEntitySet="ClassesVagoes">
+          <ScalarProperty Name="ClasseVagaoId" ColumnName="ClasseVagaoId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="Model.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="CNPJ" ColumnName="CNPJ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Composicoes">
+      <EntityTypeMapping TypeName="Model.Composicoes">
+        <MappingFragment StoreEntitySet="Composicoes">
+          <ScalarProperty Name="ComposicaoId" ColumnName="ComposicaoId" />
+          <ScalarProperty Name="IndicadorAtivo" ColumnName="IndicadorAtivo" />
+          <ScalarProperty Name="TremId" ColumnName="TremId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComposicoesLocomotivas">
+      <EntityTypeMapping TypeName="Model.ComposicoesLocomotivas">
+        <MappingFragment StoreEntitySet="ComposicoesLocomotivas">
+          <ScalarProperty Name="ComposicaoLocomotivaId" ColumnName="ComposicaoLocomotivaId" />
+          <ScalarProperty Name="ComposicaoId" ColumnName="ComposicaoId" />
+          <ScalarProperty Name="LocomotivaId" ColumnName="LocomotivaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComposicoesVagoes">
+      <EntityTypeMapping TypeName="Model.ComposicoesVagoes">
+        <MappingFragment StoreEntitySet="ComposicoesVagoes">
+          <ScalarProperty Name="ComposicaoVagaoId" ColumnName="ComposicaoVagaoId" />
+          <ScalarProperty Name="ComposicaoId" ColumnName="ComposicaoId" />
+          <ScalarProperty Name="VagaoIdId" ColumnName="VagaoIdId" />
+          <ScalarProperty Name="Vagao_VagaoId" ColumnName="Vagao_VagaoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Corredores">
+      <EntityTypeMapping TypeName="Model.Corredores">
+        <MappingFragment StoreEntitySet="Corredores">
+          <ScalarProperty Name="CorredorId" ColumnName="CorredorId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="FerroviaId" ColumnName="FerroviaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enderecos">
+      <EntityTypeMapping TypeName="Model.Enderecos">
+        <MappingFragment StoreEntitySet="Enderecos">
+          <ScalarProperty Name="EnderecoId" ColumnName="EnderecoId" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados">
+      <EntityTypeMapping TypeName="Model.Estados">
+        <MappingFragment StoreEntitySet="Estados">
+          <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ferrovias">
+      <EntityTypeMapping TypeName="Model.Ferrovias">
+        <MappingFragment StoreEntitySet="Ferrovias">
+          <ScalarProperty Name="FerroviaId" ColumnName="FerroviaId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fluxos">
+      <EntityTypeMapping TypeName="Model.Fluxos">
+        <MappingFragment StoreEntitySet="Fluxos">
+          <ScalarProperty Name="FluxoId" ColumnName="FluxoId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="OrigemId" ColumnName="OrigemId" />
+          <ScalarProperty Name="DestinoId" ColumnName="DestinoId" />
+          <ScalarProperty Name="ClienteCorrentistaId" ColumnName="ClienteCorrentistaId" />
+          <ScalarProperty Name="MercadoriaId" ColumnName="MercadoriaId" />
+          <ScalarProperty Name="UnidadeMedidaId" ColumnName="UnidadeMedidaId" />
+          <ScalarProperty Name="ClienteCorrentista_ClienteId" ColumnName="ClienteCorrentista_ClienteId" />
+          <ScalarProperty Name="Destino_AreaOperacionalId" ColumnName="Destino_AreaOperacionalId" />
+          <ScalarProperty Name="Origem_AreaOperacionalId" ColumnName="Origem_AreaOperacionalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GruposFluxos">
+      <EntityTypeMapping TypeName="Model.GruposFluxos">
+        <MappingFragment StoreEntitySet="GruposFluxos">
+          <ScalarProperty Name="GrupoFluxoId" ColumnName="GrupoFluxoId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="FerroviaId" ColumnName="FerroviaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItensCarregamentos">
+      <EntityTypeMapping TypeName="Model.ItensCarregamentos">
+        <MappingFragment StoreEntitySet="ItensCarregamentos">
+          <ScalarProperty Name="ItemCarregamentoId" ColumnName="ItemCarregamentoId" />
+          <ScalarProperty Name="VagaoId" ColumnName="VagaoId" />
+          <ScalarProperty Name="CarregamentoId" ColumnName="CarregamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locomotivas">
+      <EntityTypeMapping TypeName="Model.Locomotivas">
+        <MappingFragment StoreEntitySet="Locomotivas">
+          <ScalarProperty Name="LocomotivaId" ColumnName="LocomotivaId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="FerroviaProprietariaId" ColumnName="FerroviaProprietariaId" />
+          <ScalarProperty Name="SerieLocomotivaId" ColumnName="SerieLocomotivaId" />
+          <ScalarProperty Name="FerroviaProprietaria_FerroviaId" ColumnName="FerroviaProprietaria_FerroviaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mercadorias">
+      <EntityTypeMapping TypeName="Model.Mercadorias">
+        <MappingFragment StoreEntitySet="Mercadorias">
+          <ScalarProperty Name="MercadoriaId" ColumnName="MercadoriaId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movimentacoes">
+      <EntityTypeMapping TypeName="Model.Movimentacoes">
+        <MappingFragment StoreEntitySet="Movimentacoes">
+          <ScalarProperty Name="MovimentacaoId" ColumnName="MovimentacaoId" />
+          <ScalarProperty Name="DataChegada" ColumnName="DataChegada" />
+          <ScalarProperty Name="DataSaida" ColumnName="DataSaida" />
+          <ScalarProperty Name="AreaOperacionalId" ColumnName="AreaOperacionalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NotasFiscais">
+      <EntityTypeMapping TypeName="Model.NotasFiscais">
+        <MappingFragment StoreEntitySet="NotasFiscais">
+          <ScalarProperty Name="NotaFiscalId" ColumnName="NotaFiscalId" />
+          <ScalarProperty Name="Serie" ColumnName="Serie" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paradas">
+      <EntityTypeMapping TypeName="Model.Paradas">
+        <MappingFragment StoreEntitySet="Paradas">
+          <ScalarProperty Name="ParadaId" ColumnName="ParadaId" />
+          <ScalarProperty Name="Datainicio" ColumnName="Datainicio" />
+          <ScalarProperty Name="DataFim" ColumnName="DataFim" />
+          <ScalarProperty Name="AreaOperacionalId" ColumnName="AreaOperacionalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedidos">
+      <EntityTypeMapping TypeName="Model.Pedidos">
+        <MappingFragment StoreEntitySet="Pedidos">
+          <ScalarProperty Name="PedidoId" ColumnName="PedidoId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="GrupoFluxoId" ColumnName="GrupoFluxoId" />
+          <ScalarProperty Name="DataPedido" ColumnName="DataPedido" />
+          <ScalarProperty Name="QuantidadeVagoes" ColumnName="QuantidadeVagoes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rotas">
+      <EntityTypeMapping TypeName="Model.Rotas">
+        <MappingFragment StoreEntitySet="Rotas">
+          <ScalarProperty Name="RotaId" ColumnName="RotaId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="AreaOperacionalInicioId" ColumnName="AreaOperacionalInicioId" />
+          <ScalarProperty Name="AreaOperacionalFimId" ColumnName="AreaOperacionalFimId" />
+          <ScalarProperty Name="Extencao" ColumnName="Extencao" />
+          <ScalarProperty Name="AreaOperacionalFim_AreaOperacionalId" ColumnName="AreaOperacionalFim_AreaOperacionalId" />
+          <ScalarProperty Name="AreaOperacionalInicio_AreaOperacionalId" ColumnName="AreaOperacionalInicio_AreaOperacionalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeriesCarregamentos">
+      <EntityTypeMapping TypeName="Model.SeriesCarregamentos">
+        <MappingFragment StoreEntitySet="SeriesCarregamentos">
+          <ScalarProperty Name="SerieCarregamentoId" ColumnName="SerieCarregamentoId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="FerroviaId" ColumnName="FerroviaId" />
+          <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeriesLocomotivas">
+      <EntityTypeMapping TypeName="Model.SeriesLocomotivas">
+        <MappingFragment StoreEntitySet="SeriesLocomotivas">
+          <ScalarProperty Name="SerieLocomotivaId" ColumnName="SerieLocomotivaId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeriesVagoes">
+      <EntityTypeMapping TypeName="Model.SeriesVagoes">
+        <MappingFragment StoreEntitySet="SeriesVagoes">
+          <ScalarProperty Name="SerieVagaoId" ColumnName="SerieVagaoId" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="ClasseVagaoId" ColumnName="ClasseVagaoId" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trens">
+      <EntityTypeMapping TypeName="Model.Trens">
+        <MappingFragment StoreEntitySet="Trens">
+          <ScalarProperty Name="TremId" ColumnName="TremId" />
+          <ScalarProperty Name="Prefixo" ColumnName="Prefixo" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnidadesMedidas">
+      <EntityTypeMapping TypeName="Model.UnidadesMedidas">
+        <MappingFragment StoreEntitySet="UnidadesMedidas">
+          <ScalarProperty Name="UnidadeMedidaId" ColumnName="UnidadeMedidaId" />
+          <ScalarProperty Name="Codico" ColumnName="Codico" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vagoes">
+      <EntityTypeMapping TypeName="Model.Vagoes">
+        <MappingFragment StoreEntitySet="Vagoes">
+          <ScalarProperty Name="VagaoId" ColumnName="VagaoId" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Bitola" ColumnName="Bitola" />
+          <ScalarProperty Name="QuantidadeEixos" ColumnName="QuantidadeEixos" />
+          <ScalarProperty Name="CapacidadeNominal" ColumnName="CapacidadeNominal" />
+          <ScalarProperty Name="Comprimento" ColumnName="Comprimento" />
+          <ScalarProperty Name="Largura" ColumnName="Largura" />
+          <ScalarProperty Name="Altura" ColumnName="Altura" />
+          <ScalarProperty Name="ComprimentoUtil" ColumnName="ComprimentoUtil" />
+          <ScalarProperty Name="LarguraUtil" ColumnName="LarguraUtil" />
+          <ScalarProperty Name="VolumeMedio" ColumnName="VolumeMedio" />
+          <ScalarProperty Name="DataFabricacao" ColumnName="DataFabricacao" />
+          <ScalarProperty Name="Tara" ColumnName="Tara" />
+          <ScalarProperty Name="FerroviaOPeradoraId" ColumnName="FerroviaOPeradoraId" />
+          <ScalarProperty Name="SerieVagaoId" ColumnName="SerieVagaoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
