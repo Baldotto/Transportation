@@ -1,1 +1,3 @@
 git rm -r "./packages/"
+git rm -r "./src/Transportation.UI.Mvc/bin"
+git rm -r "./src/Transportation.UI.Mvc/obj"
